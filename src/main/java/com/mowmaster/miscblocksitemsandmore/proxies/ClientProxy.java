@@ -13,8 +13,10 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ClientProxy extends CommonProxy
 {
+    @Override
     @SideOnly(Side.CLIENT)
-            private void ItemRegRenderClient()
+
+    public void preInit()
     {
         ItemRenderRegistry.ItemRR();
     }
