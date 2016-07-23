@@ -1,0 +1,16 @@
+[
+{
+  "modid": "miscblocksitemsandmore",
+  "name": "Misc Blocks Items and More",
+  "description": "Just misc tweeks I feel should be in the game or are handy to have",
+  "version": "0.1",
+  "mcversion": "1.10.2-12.18.1.2018",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Mowmaster"],
+  "credits": "Inspired by all the mobs I have ever farmed while playing minecraft. ~Mowmaster",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
