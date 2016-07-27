@@ -1,8 +1,7 @@
 package com.mowmaster.miscblocksitemsandmore.recipies;
 
 
-import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
+
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -10,7 +9,8 @@ import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.item.crafting.IRecipe;
 
-import javax.jws.soap.InitParam;
+
+
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -34,6 +34,7 @@ public class removeRecipies
     public static void removedCraftingItems()
     {
 
+
         //Removed Metal Armor
         removeCrafting(Items.IRON_HELMET);
         removeCrafting(Items.IRON_CHESTPLATE);
@@ -43,7 +44,8 @@ public class removeRecipies
         removeCrafting(Items.GOLDEN_CHESTPLATE);
         removeCrafting(Items.GOLDEN_LEGGINGS);
         removeCrafting(Items.GOLDEN_BOOTS);
-
+        // Other Vanilla Tweaks
+        removeCrafting(Items.FLINT);
 
     }
 
