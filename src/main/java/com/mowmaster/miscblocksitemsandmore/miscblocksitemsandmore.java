@@ -2,6 +2,8 @@ package com.mowmaster.miscblocksitemsandmore;
 
 
 import com.mowmaster.miscblocksitemsandmore.ModChecker.*;
+import com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct.tcon;
+import com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct.tconintegration;
 import com.mowmaster.miscblocksitemsandmore.item.ItemRegistry;
 import com.mowmaster.miscblocksitemsandmore.proxies.CommonProxy;
 import com.mowmaster.miscblocksitemsandmore.recipies.addRecipies;
@@ -9,15 +11,10 @@ import com.mowmaster.miscblocksitemsandmore.recipies.removeRecipies;
 import com.mowmaster.miscblocksitemsandmore.references.reference;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.world.WorldEvent;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.*;
-import net.minecraftforge.fml.common.eventhandler.Event;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.PlayerEvent;
-
-import static com.ibm.icu.impl.CurrencyData.provider;
 
 
 @Mod(modid = reference.MODID, name = reference.MODNAME, version = reference.VERSION)
@@ -39,6 +36,9 @@ public class miscblocksitemsandmore
     {
         proxy.preInit();
         MinecraftForge.EVENT_BUS.register(this);
+
+        tconintegration.checkTCon2();
+
     }
 
     public void postInit(FMLPostInitializationEvent event)
@@ -56,10 +56,15 @@ public class miscblocksitemsandmore
             silentsgems.checkSG();
             substratum.checkSub();
             tcon.checkTCon();
+
             removeRecipies.removedCraftingItems();
             removeRecipies.removedSmeltingItems();
+
             addRecipies.bR();
+
+
         }
+
     }
 
 

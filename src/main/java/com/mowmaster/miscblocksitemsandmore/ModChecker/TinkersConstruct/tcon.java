@@ -1,4 +1,4 @@
-package com.mowmaster.miscblocksitemsandmore.ModChecker;
+package com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import slimeknights.tconstruct.library.TinkerRegistry;
 
 import static com.mowmaster.miscblocksitemsandmore.recipies.removeRecipies.removeCrafting;
 
@@ -38,5 +39,6 @@ public class tcon
 
 
         }
+
     }
 }
