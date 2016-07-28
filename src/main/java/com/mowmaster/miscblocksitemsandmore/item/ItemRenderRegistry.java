@@ -13,6 +13,8 @@ public class ItemRenderRegistry
         register(ItemRegistry.glass_tinypile);
         register(ItemRegistry.glass_pile);
         register(ItemRegistry.glass_largepile);
+
+        register(ItemRegistry.tool_hammer);
     }
     public static void register(Item item)
     {

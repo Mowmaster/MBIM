@@ -6,6 +6,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 import static com.mowmaster.miscblocksitemsandmore.item.ItemRegistry.*;
@@ -25,6 +26,8 @@ public class addRecipies
         GameRegistry.addShapedRecipe(new ItemStack(glass_largepile, 1), new Object[]{"XXX","XXX","XXX", 'X', new ItemStack(glass_pile, 1)});
         GameRegistry.addSmelting(new ItemStack(glass_pile), new ItemStack(Blocks.GLASS,1),0.1F);
         GameRegistry.addSmelting(new ItemStack(glass_largepile), new ItemStack(Blocks.GLASS,9),0.9F);
+
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(tool_hammer,1), new Object[]{"XXX","XYX", " Y ", 'X',"ingotIron",'Y', Items.STICK}));
 
         //Vanilla Tweaks
 

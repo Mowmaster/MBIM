@@ -10,10 +10,14 @@ public class ItemRegistry
     public static Item glass_pile;
     public static Item glass_largepile;
 
+    public static Item tool_hammer;
+
     public static void registerBottles()
     {
         GameRegistry.register(glass_tinypile = new basicItem("glass_tinypile").setRegistryName("glass_tinypile"));
         GameRegistry.register(glass_pile = new basicItem("glass_pile").setRegistryName("glass_pile"));
         GameRegistry.register(glass_largepile = new basicItem("glass_largepile").setRegistryName("glass_largepile"));
+
+        GameRegistry.register(tool_hammer = new basicItem("tool_hammer").setRegistryName("tool_hammer"));
     }
 }

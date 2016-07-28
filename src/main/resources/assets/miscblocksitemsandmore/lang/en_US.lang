@@ -3,3 +3,5 @@ itemGroup.tabBottles=Misc Blocks Items And More
 item.glass_tinypile.name=Glass Dust
 item.glass_pile.name=Pile of Glass Dust
 item.glass_largepile.name=Large Pile of Glass Dust
+
+item.tool_hammer.name=Hammer
