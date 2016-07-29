@@ -27,6 +27,7 @@ public class addRecipies
         GameRegistry.addSmelting(new ItemStack(glass_pile), new ItemStack(Blocks.GLASS,1),0.1F);
         GameRegistry.addSmelting(new ItemStack(glass_largepile), new ItemStack(Blocks.GLASS,9),0.9F);
 
+
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(tool_hammer,1), new Object[]{"XXX","XYX", " Y ", 'X',"ingotIron",'Y', Items.STICK}));
 
         //Vanilla Tweaks
