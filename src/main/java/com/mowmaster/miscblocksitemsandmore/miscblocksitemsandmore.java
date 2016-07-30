@@ -4,6 +4,7 @@ package com.mowmaster.miscblocksitemsandmore;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.*;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct.tcon;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct.tconintegration;
+import com.mowmaster.miscblocksitemsandmore.fluid.basicFluid;
 import com.mowmaster.miscblocksitemsandmore.item.ItemRegistry;
 import com.mowmaster.miscblocksitemsandmore.proxies.CommonProxy;
 import com.mowmaster.miscblocksitemsandmore.recipies.addRecipies;
@@ -30,14 +31,16 @@ public class miscblocksitemsandmore
     public void preInit(FMLPreInitializationEvent event)
     {
         ItemRegistry.registerBottles();
+
     }
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
         proxy.preInit();
         MinecraftForge.EVENT_BUS.register(this);
-
+        //basicFluid.regFluid();
         tconintegration.checkTCon2();
+
 
     }
 
@@ -56,7 +59,6 @@ public class miscblocksitemsandmore
             silentsgems.checkSG();
             substratum.checkSub();
             tcon.checkTCon();
-
             removeRecipies.removedCraftingItems();
             removeRecipies.removedSmeltingItems();
 
