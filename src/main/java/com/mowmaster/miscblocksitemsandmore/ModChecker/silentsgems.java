@@ -33,10 +33,10 @@ public class silentsgems
 
             //Removed Recipies
             removeCrafting(SGArmorFrame);
-            removeCrafting(SGHelmet);
-            removeCrafting(SGChestplate);
-            removeCrafting(SGLeggings);
-            removeCrafting(SGBoots);
+            //removeCrafting(SGHelmet);
+            //removeCrafting(SGChestplate);
+            //removeCrafting(SGLeggings);
+            //removeCrafting(SGBoots);
 
 
             //Added Recipies
