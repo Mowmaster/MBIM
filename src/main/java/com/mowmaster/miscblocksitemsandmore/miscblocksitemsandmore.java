@@ -2,6 +2,7 @@ package com.mowmaster.miscblocksitemsandmore;
 
 
 import com.mowmaster.miscblocksitemsandmore.ModChecker.*;
+import com.mowmaster.miscblocksitemsandmore.ModChecker.Forestry.forestryintegration;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct.tcon;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct.tconintegration;
 import com.mowmaster.miscblocksitemsandmore.fluid.basicFluid;
@@ -40,6 +41,7 @@ public class miscblocksitemsandmore
         MinecraftForge.EVENT_BUS.register(this);
         //basicFluid.regFluid();
         tconintegration.checkTCon2();
+        forestryintegration.checktheForest();
 
 
     }

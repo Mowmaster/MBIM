@@ -43,31 +43,30 @@ public class tconintegration
 
             if (Loader.isModLoaded("foundry")) {
                 // Smelting Substratum ingots down into Foundry Fluids
-                //PurpleSlime is a Placeholder for the time being
-                TinkerRegistry.registerMelting(Items.ENDER_PEARL, FluidRegistry.getFluid("liquidenderpearl"), 144);
+                TinkerRegistry.registerMelting(Items.ENDER_PEARL, FluidRegistry.getFluid("liquidenderpearl"), 250);
                 TinkerRegistry.registerMelting(Items.GLOWSTONE_DUST, FluidRegistry.getFluid("liquidglowstone"), 100);
                 TinkerRegistry.registerMelting(Blocks.GLOWSTONE, FluidRegistry.getFluid("liquidglowstone"), 400);
                 TinkerRegistry.registerMelting(Items.REDSTONE, FluidRegistry.getFluid("liquidredstone"), 100);
                 TinkerRegistry.registerMelting(Blocks.REDSTONE_BLOCK, FluidRegistry.getFluid("liquidredstone"), 900);
-                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("substratum:ingot")), 1, 15), FluidRegistry.getFluid("liquidenderium"), 144);
-                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("substratum:ingot")), 1, 11), FluidRegistry.getFluid("liquidplatinum"), 144);
-                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("substratum:ingot")), 1, 13), FluidRegistry.getFluid("liquidsignalum"), 144);
-                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("substratum:ingot")), 1, 14), FluidRegistry.getFluid("liquidlumium"), 144);
-                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("substratum:ingot")), 1, 4), FluidRegistry.getFluid("liquidinvar"), 144);
-                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("substratum:ingot")), 1, 12), FluidRegistry.getFluid("liquidcupronickel"), 144);
-                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("substratum:ingot")), 1, 18), FluidRegistry.getFluid("liquidchrome"), 144);
+                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("substratum:ingot")), 1, 15), FluidRegistry.getFluid("liquidenderium"), 108);
+                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("substratum:ingot")), 1, 11), FluidRegistry.getFluid("liquidplatinum"), 108);
+                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("substratum:ingot")), 1, 13), FluidRegistry.getFluid("liquidsignalum"), 108);
+                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("substratum:ingot")), 1, 14), FluidRegistry.getFluid("liquidlumium"), 108);
+                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("substratum:ingot")), 1, 4), FluidRegistry.getFluid("liquidinvar"), 108);
+                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("substratum:ingot")), 1, 12), FluidRegistry.getFluid("liquidcupronickel"), 108);
+                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("substratum:ingot")), 1, 18), FluidRegistry.getFluid("liquidchrome"), 108);
                 TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("substratum:ingot")), 1, 16), aluminum, 144);
+                //EnderIO Added dark steel to the liquid options
+                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("enderio:itemAlloy")),1,6), FluidRegistry.getFluid("liquiddarksteel"), 108);
 
-                TinkerRegistry.registerMelting(new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("enderio:itemAlloy")),1,6), FluidRegistry.getFluid("liquiddarksteel"), 144);
-
-                TinkerRegistry.registerMelting("oreChrome", FluidRegistry.getFluid("liquidchrome"), 288);
-                TinkerRegistry.registerMelting("orePlatinum", FluidRegistry.getFluid("liquidplatinum"), 288);
+                TinkerRegistry.registerMelting("oreChrome", FluidRegistry.getFluid("liquidchrome"), 216);
+                TinkerRegistry.registerMelting("orePlatinum", FluidRegistry.getFluid("liquidplatinum"), 216);
                 TinkerRegistry.registerMelting("oreAlumina", aluminum, 288);
-
+/*
                 // Foundry to TCon is a 4:3 Ratio (432 is the common factor)or 144mb:108mb
                 //Enderium
-                TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidenderium"), 9), new FluidStack(FluidRegistry.getFluid("liquidplatinum"), 3), new FluidStack(FluidRegistry.getFluid("silver"), 3), new FluidStack(FluidRegistry.getFluid("liquidenderpearl"), 12), new FluidStack(FluidRegistry.getFluid("tin"), 6));
-                TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidenderium"), 8), new FluidStack(FluidRegistry.getFluid("liquidplatinum"), 4), new FluidStack(FluidRegistry.getFluid("liquidsilver"), 4), new FluidStack(FluidRegistry.getFluid("liquidenderpearl"), 16), new FluidStack(FluidRegistry.getFluid("liquidtin"), 8));
+                TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidenderium"), 2), new FluidStack(FluidRegistry.getFluid("liquidplatinum"), 1), new FluidStack(FluidRegistry.getFluid("silver"), 1), new FluidStack(FluidRegistry.getFluid("liquidenderpearl"), 9), new FluidStack(FluidRegistry.getFluid("tin"), 2));
+                TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidenderium"), 2), new FluidStack(FluidRegistry.getFluid("liquidplatinum"), 1), new FluidStack(FluidRegistry.getFluid("liquidsilver"), 1), new FluidStack(FluidRegistry.getFluid("liquidenderpearl"), 9), new FluidStack(FluidRegistry.getFluid("liquidtin"), 2));
                 //Invar
                 TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidinvar"), 9), new FluidStack(FluidRegistry.getFluid("iron"), 6), new FluidStack(FluidRegistry.getFluid("nickel"), 3));
                 TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidinvar"), 12), new FluidStack(FluidRegistry.getFluid("liquidiron"), 8), new FluidStack(FluidRegistry.getFluid("liquidnickel"), 4));
@@ -80,6 +79,7 @@ public class tconintegration
                 //Cupronickel
                 TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidcupronickel"), 6), new FluidStack(FluidRegistry.getFluid("copper"), 3), new FluidStack(FluidRegistry.getFluid("nickel"), 3));
                 TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidcupronickel"), 8), new FluidStack(FluidRegistry.getFluid("liquidcopper"), 4), new FluidStack(FluidRegistry.getFluid("liquidnickel"), 4));
+*/
             }
 
 
