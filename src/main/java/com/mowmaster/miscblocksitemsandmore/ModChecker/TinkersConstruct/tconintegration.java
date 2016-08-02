@@ -22,7 +22,6 @@ public class tconintegration
 {
     public static void checkTCon2()
     {
-
         if (Loader.isModLoaded("tconstruct"))
         {
             //Smeltable Casts

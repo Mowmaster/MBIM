@@ -1,11 +1,7 @@
 package com.mowmaster.miscblocksitemsandmore.ModChecker.Forestry;
 
-import forestry.api.core.ForestryAPI;
-import forestry.api.recipes.ISqueezerManager;
-import forestry.api.recipes.ISqueezerRecipe;
+
 import forestry.api.recipes.RecipeManagers;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
