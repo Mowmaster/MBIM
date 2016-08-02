@@ -58,6 +58,7 @@ public class miscblocksitemsandmore
             cookingforblockheads.checkCFB();
             extrautils2.checkUtils2();
             quark.checkQuark();
+            reliquary.checkXeno();
             silentsgems.checkSG();
             substratum.checkSub();
             tcon.checkTCon();
