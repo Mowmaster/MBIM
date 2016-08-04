@@ -1,5 +1,6 @@
 package com.mowmaster.miscblocksitemsandmore.item;
 
+import com.mowmaster.miscblocksitemsandmore.Configs.config;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -14,10 +15,13 @@ public class ItemRegistry
 
     public static void registerBottles()
     {
-        GameRegistry.register(glass_tinypile = new basicItem("glass_tinypile").setRegistryName("glass_tinypile"));
-        GameRegistry.register(glass_pile = new basicItem("glass_pile").setRegistryName("glass_pile"));
-        GameRegistry.register(glass_largepile = new basicItem("glass_largepile").setRegistryName("glass_largepile"));
-
-        GameRegistry.register(tool_hammer = new basicItem("tool_hammer").setRegistryName("tool_hammer"));
+        if (config.RecyclableGlass) {
+            GameRegistry.register(glass_tinypile = new basicItem("glass_tinypile").setRegistryName("glass_tinypile"));
+            GameRegistry.register(glass_pile = new basicItem("glass_pile").setRegistryName("glass_pile"));
+            GameRegistry.register(glass_largepile = new basicItem("glass_largepile").setRegistryName("glass_largepile"));
+        }
+        if (config.HammaTime) {
+            GameRegistry.register(tool_hammer = new basicItem("tool_hammer").setRegistryName("tool_hammer"));
+        }
     }
 }

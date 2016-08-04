@@ -2,6 +2,7 @@ package com.mowmaster.miscblocksitemsandmore.recipies;
 
 
 
+import com.mowmaster.miscblocksitemsandmore.Configs.config;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -35,17 +36,29 @@ public class removeRecipies
     {
 
 
+
+    if (config.NewEraTweaks)
+        {
         //Removed Metal Armor
+
+        //Iron
         removeCrafting(Items.IRON_HELMET);
         removeCrafting(Items.IRON_CHESTPLATE);
         removeCrafting(Items.IRON_LEGGINGS);
         removeCrafting(Items.IRON_BOOTS);
+
+        //Gold
         removeCrafting(Items.GOLDEN_HELMET);
         removeCrafting(Items.GOLDEN_CHESTPLATE);
         removeCrafting(Items.GOLDEN_LEGGINGS);
         removeCrafting(Items.GOLDEN_BOOTS);
         // Other Vanilla Tweaks
-        removeCrafting(Items.FLINT);
+        }
+
+        if (config.FlintForDays) {
+            //Remove other flint recipes
+            removeCrafting(Items.FLINT);
+        }
 
     }
 

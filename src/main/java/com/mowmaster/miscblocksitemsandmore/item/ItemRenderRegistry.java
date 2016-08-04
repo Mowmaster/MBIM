@@ -1,5 +1,6 @@
 package com.mowmaster.miscblocksitemsandmore.item;
 
+import com.mowmaster.miscblocksitemsandmore.Configs.config;
 import com.mowmaster.miscblocksitemsandmore.references.reference;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -10,11 +11,14 @@ public class ItemRenderRegistry
 {
     public static void ItemRR()
     {
-        register(ItemRegistry.glass_tinypile);
-        register(ItemRegistry.glass_pile);
-        register(ItemRegistry.glass_largepile);
-
-        register(ItemRegistry.tool_hammer);
+        if (config.RecyclableGlass) {
+            register(ItemRegistry.glass_tinypile);
+            register(ItemRegistry.glass_pile);
+            register(ItemRegistry.glass_largepile);
+        }
+        if (config.HammaTime) {
+            register(ItemRegistry.tool_hammer);
+        }
     }
     public static void register(Item item)
     {

@@ -1,5 +1,6 @@
 package com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct;
 
+import com.mowmaster.miscblocksitemsandmore.Configs.config;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -24,6 +25,10 @@ public class tconintegration
     {
         if (Loader.isModLoaded("tconstruct"))
         {
+
+
+
+
             //Smeltable Casts
             TinkerRegistry.registerMelting(cast,brass,144 );
             TinkerRegistry.registerMelting(castCustom,brass,144 );
@@ -33,10 +38,13 @@ public class tconintegration
             TinkerRegistry.registerMelting(Items.CHAINMAIL_CHESTPLATE,steel,1152 );
             TinkerRegistry.registerMelting(Items.CHAINMAIL_LEGGINGS,steel,1008 );
             TinkerRegistry.registerMelting(Items.CHAINMAIL_BOOTS,steel,576 );
-            // Glass Recycling
-            TinkerRegistry.registerMelting(glass_largepile,glass,11664 );
-            TinkerRegistry.registerMelting(glass_pile,glass,1296 );
-            TinkerRegistry.registerMelting(glass_tinypile,glass,486 );
+
+            if (config.RecyclableGlass) {
+                // Glass Recycling
+                TinkerRegistry.registerMelting(glass_largepile, glass, 11664);
+                TinkerRegistry.registerMelting(glass_pile, glass, 1296);
+                TinkerRegistry.registerMelting(glass_tinypile, glass, 486);
+            }
 
             TinkerRegistry.registerMelting(Items.GLASS_BOTTLE,glass,1296 );
 

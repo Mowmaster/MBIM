@@ -1,5 +1,6 @@
 package com.mowmaster.miscblocksitemsandmore.ModChecker;
 
+import com.mowmaster.miscblocksitemsandmore.Configs.config;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -70,33 +71,37 @@ public class substratum
             removeCrafting(Item.REGISTRY.getObject(new ResourceLocation("substratum:bootsSilver")));
             removeCrafting(Item.REGISTRY.getObject(new ResourceLocation("substratum:bootsSteel")));
 
-            removeCrafting(SPlate);
+
+            if (config.HammaTime) {
+
+                removeCrafting(SPlate);
 
 
-            //Added Recipies
-            //GameRegistry.addShapedRecipe(new ItemStack(CFBCounter,1), new Object[]{"X","Y", 'X',new ItemStack(Blocks.STAINED_HARDENED_CLAY,1,15),'Y', new ItemStack(Blocks.CHEST)});
-            //GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(CFBTable,1), new Object[]{"XXX","YZY", "YYY", 'X',new ItemStack(Blocks.STAINED_HARDENED_CLAY,1,15),'Y', "logWood",'Z', new ItemStack(CFBBook,1,2)}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,0), new Object[]{"XXY", 'X',"ingotIron",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,1), new Object[]{"XXY", 'X',"ingotGold",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,2), new Object[]{"XXY", 'X',"ingotCopper",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,3), new Object[]{"XXY", 'X',"ingotTin",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,4), new Object[]{"XXY", 'X',"ingotBronze",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,5), new Object[]{"XXY", 'X',"ingotElectrum",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,6), new Object[]{"XXY", 'X',"ingotInvar",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,7), new Object[]{"XXY", 'X',"ingotNickel",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,8), new Object[]{"XXY", 'X',"ingotZinc",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,9), new Object[]{"XXY", 'X',"ingotBrass",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,10), new Object[]{"XXY", 'X',"ingotSilver",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,11), new Object[]{"XXY", 'X',"ingotSteel",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,12), new Object[]{"XXY", 'X',"ingotLead",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,13), new Object[]{"XXY", 'X',"ingotPlatinum",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,14), new Object[]{"XXY", 'X',"ingotCupronickel",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,15), new Object[]{"XXY", 'X',"ingotSignalum",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,16), new Object[]{"XXY", 'X',"ingotLumium",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,17), new Object[]{"XXY", 'X',"ingotEnderium",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,18), new Object[]{"XXY", 'X',"ingotAluminium",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate,1,19), new Object[]{"XXY", 'X',"ingotChromium",'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
 
+                //Added Recipies
+                //GameRegistry.addShapedRecipe(new ItemStack(CFBCounter,1), new Object[]{"X","Y", 'X',new ItemStack(Blocks.STAINED_HARDENED_CLAY,1,15),'Y', new ItemStack(Blocks.CHEST)});
+                //GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(CFBTable,1), new Object[]{"XXX","YZY", "YYY", 'X',new ItemStack(Blocks.STAINED_HARDENED_CLAY,1,15),'Y', "logWood",'Z', new ItemStack(CFBBook,1,2)}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 0), new Object[]{"XXY", 'X', "ingotIron", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 1), new Object[]{"XXY", 'X', "ingotGold", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 2), new Object[]{"XXY", 'X', "ingotCopper", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 3), new Object[]{"XXY", 'X', "ingotTin", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 4), new Object[]{"XXY", 'X', "ingotBronze", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 5), new Object[]{"XXY", 'X', "ingotElectrum", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 6), new Object[]{"XXY", 'X', "ingotInvar", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 7), new Object[]{"XXY", 'X', "ingotNickel", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 8), new Object[]{"XXY", 'X', "ingotZinc", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 9), new Object[]{"XXY", 'X', "ingotBrass", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 10), new Object[]{"XXY", 'X', "ingotSilver", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 11), new Object[]{"XXY", 'X', "ingotSteel", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 12), new Object[]{"XXY", 'X', "ingotLead", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 13), new Object[]{"XXY", 'X', "ingotPlatinum", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 14), new Object[]{"XXY", 'X', "ingotCupronickel", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 15), new Object[]{"XXY", 'X', "ingotSignalum", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 16), new Object[]{"XXY", 'X', "ingotLumium", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 17), new Object[]{"XXY", 'X', "ingotEnderium", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 18), new Object[]{"XXY", 'X', "ingotAluminium", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SPlate, 1, 19), new Object[]{"XXY", 'X', "ingotChromium", 'Y', new ItemStack(tool_hammer.setContainerItem(tool_hammer))}));
+            }
 
 
             //Added Steel Dust
