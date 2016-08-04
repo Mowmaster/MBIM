@@ -2,9 +2,11 @@ package com.mowmaster.miscblocksitemsandmore.recipies;
 
 import com.mowmaster.miscblocksitemsandmore.Configs.config;
 import net.minecraft.block.Block;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.PotionAbsorption;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.ShapedOreRecipe;
@@ -19,7 +21,7 @@ public class addRecipies
 {
     public static void bR()
     {
-        if (config.RecyclableGlass) {
+            if (config.RecyclableGlass) {
             //Glass dust into Glass recipies
             GameRegistry.addShapelessRecipe(new ItemStack(glass_tinypile, 1), new ItemStack(Blocks.GLASS_PANE, 1));
             GameRegistry.addShapelessRecipe(new ItemStack(glass_pile, 1), new ItemStack(Items.GLASS_BOTTLE, 1));
@@ -27,12 +29,12 @@ public class addRecipies
             GameRegistry.addShapedRecipe(new ItemStack(glass_largepile, 1), new Object[]{"XXX", "XXX", "XXX", 'X', new ItemStack(glass_pile, 1)});
             GameRegistry.addSmelting(new ItemStack(glass_pile), new ItemStack(Blocks.GLASS, 1), 0.1F);
             GameRegistry.addSmelting(new ItemStack(glass_largepile), new ItemStack(Blocks.GLASS, 9), 0.9F);
-        }
+            }
 
-        if (config.HammaTime) {
+            if (config.HammaTime) {
             // Added to smash and crush things when needed
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(tool_hammer, 1), new Object[]{"XXX", "XYX", " Y ", 'X', "ingotIron", 'Y', Items.STICK}));
-        }
+            }
         //Vanilla Tweaks
             if (config.FlintForDays) {
                 //Gravel into Flint
