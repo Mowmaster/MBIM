@@ -56,6 +56,7 @@ public class miscblocksitemsandmore
         if (event.getWorld().isRemote && event.getWorld() != null && event.getWorld().provider.getDimension() == 0)
         {
             cookingforblockheads.checkCFB();
+            enderio.enderCheck();
             extrautils2.checkUtils2();
             quark.checkQuark();
             reliquary.checkXeno();
