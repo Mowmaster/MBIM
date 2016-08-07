@@ -18,6 +18,8 @@ public class ItemRenderRegistry
         }
         if (config.HammaTime) {
             register(ItemRegistry.tool_hammer);
+            register(ItemRegistry.enderium_blend_dust);
+            register(ItemRegistry.fake_pyrothium);
         }
     }
     public static void register(Item item)

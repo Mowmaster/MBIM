@@ -6,12 +6,12 @@ import com.mowmaster.miscblocksitemsandmore.ModChecker.*;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.Forestry.forestryintegration;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct.tcon;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct.tconintegration;
-import com.mowmaster.miscblocksitemsandmore.fluid.basicFluid;
 import com.mowmaster.miscblocksitemsandmore.item.ItemRegistry;
 import com.mowmaster.miscblocksitemsandmore.proxies.CommonProxy;
 import com.mowmaster.miscblocksitemsandmore.recipies.addRecipies;
 import com.mowmaster.miscblocksitemsandmore.recipies.removeRecipies;
 import com.mowmaster.miscblocksitemsandmore.references.reference;
+import com.mowmaster.miscblocksitemsandmore.world.BiomeReg;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -45,6 +45,7 @@ public class miscblocksitemsandmore
         configDir.mkdirs();
         config.initConfig(new File(configDir.getPath(), reference.MODID + ".cfg"));
         ItemRegistry.registerBottles();
+        BiomeReg.biomeRegistry();
 
     }
     @Mod.EventHandler
@@ -73,11 +74,13 @@ public class miscblocksitemsandmore
             extrautils2.checkUtils2();
             quark.checkQuark();
             reliquary.checkXeno();
+            rftools.notOPenough();
             silentsgems.checkSG();
             substratum.checkSub();
             tcon.checkTCon();
             removeRecipies.removedCraftingItems();
             removeRecipies.removedSmeltingItems();
+
 
             addRecipies.bR();
 

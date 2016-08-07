@@ -6,9 +6,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 
 import java.io.File;
 
-/**
- * Created by KingMowmaster on 8/4/2016.
- */
+
 public class config
 {
 
@@ -24,9 +22,15 @@ public class config
     public static boolean LeatherForDays;
     public static boolean CompactUncrafting;
     public static boolean HammaTime;
+    public static boolean harderRecipes;
+    public static boolean rftoolsHARD;
 
 
     public static boolean NewEraTweaks;
+    public static boolean rfTooOP;
+
+
+    public static int MinersDelightBiomeID;
 
 
     public static void initConfig(File file)
@@ -40,12 +44,32 @@ public class config
     {
         String category;
 
+        //category = "HardRecipes";
+        //configFile.addCustomCategoryComment(category,"Harder Recipes");
+
+        //harderRecipes = configFile.getBoolean("Harder Recipes",category,false,"Are the default recipes to easy for a pro like you?");
+        //rftoolsHARD = configFile.getBoolean("Harder Recipes for RFTools",category,false,"For those who don't want to make dimensions in your first 10 minutes of playing");
+
+        category = "Biome";
+        configFile.addCustomCategoryComment(category,"Biome ID Settings");
+        MinersDelightBiomeID = configFile.getInt("MinersDelightBiomeID",category,40,20,80,"Biome ID for Miners Delight");
+
+
         category = "Items";
         configFile.addCustomCategoryComment(category,"Added by MBIM");
 
 
         RecyclableGlass = configFile.getBoolean("Recycleable Glass",category,true,"Do you want to be able to recycle glass?");
         HammaTime = configFile.getBoolean("Hamma Time!",category,true,"Do you need more Hammers in your life?");
+
+
+
+
+        category = "NewEra";
+        configFile.addCustomCategoryComment(category,"New Era Tweaks");
+
+        NewEraTweaks = configFile.getBoolean("New Era Tweaks",category,true,"Are you playing the modpack 'New Era'?");
+        rfTooOP = configFile.getBoolean("RFTools Too Op",category,true,"Nerfing RFTools is so much fun!");
 
 
 
@@ -59,10 +83,7 @@ public class config
 
 
 
-        category = "NewEra";
-        configFile.addCustomCategoryComment(category,"New Era Tweaks");
 
-        NewEraTweaks = configFile.getBoolean("New Era Tweaks",category,true,"Are you playing the modpack 'New Era'?");
 
 
 
