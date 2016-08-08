@@ -11,8 +11,11 @@ import com.mowmaster.miscblocksitemsandmore.proxies.CommonProxy;
 import com.mowmaster.miscblocksitemsandmore.recipies.addRecipies;
 import com.mowmaster.miscblocksitemsandmore.recipies.removeRecipies;
 import com.mowmaster.miscblocksitemsandmore.references.reference;
-import com.mowmaster.miscblocksitemsandmore.world.BiomeReg;
+import com.mowmaster.miscblocksitemsandmore.world.biomes.BiomeReg;
+import com.mowmaster.miscblocksitemsandmore.world.worlds.MinersDelightSpawnable;
+import net.minecraft.world.WorldType;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.terraingen.WorldTypeEvent;
 import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -59,10 +62,10 @@ public class miscblocksitemsandmore
 
 
     }
-
+    @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-
+        WorldType MINERSDELIGHT = new MinersDelightSpawnable("Miners Delight");
     }
     @SubscribeEvent
     public void worldLoad(WorldEvent.Load event)

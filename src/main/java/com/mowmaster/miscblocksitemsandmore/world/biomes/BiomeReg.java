@@ -1,4 +1,4 @@
-package com.mowmaster.miscblocksitemsandmore.world;
+package com.mowmaster.miscblocksitemsandmore.world.biomes;
 
 import com.mowmaster.miscblocksitemsandmore.Configs.config;
 import com.mowmaster.miscblocksitemsandmore.world.biomes.BiomeMinersDelight;
@@ -25,7 +25,7 @@ public class BiomeReg
 
     public static void initBiome()
     {
-        MinersDelight = new BiomeMinersDelight(new Biome.BiomeProperties("Miners Delight").setTemperature(0.8f).setRainfall(0.4f).setBaseHeight(1.5f).setHeightVariation(0.5f)/*.setWaterColor(6076655)*/);
+        MinersDelight = new BiomeMinersDelight(new Biome.BiomeProperties("Miners Delight").setTemperature(0.8f).setRainDisabled().setBaseHeight(2.0f).setHeightVariation(1.5f).setWaterColor(6076655));
         Biome.registerBiome(MinersDelightID,"Miners Delight",MinersDelight);
     }
 
