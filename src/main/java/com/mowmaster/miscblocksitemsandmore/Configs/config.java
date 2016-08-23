@@ -29,6 +29,8 @@ public class config
     public static boolean NewEraTweaks;
     public static boolean rfTooOP;
 
+    public static boolean VoidDrums;
+
 
     public static int MinersDelightBiomeID;
 
@@ -52,7 +54,7 @@ public class config
 
         category = "Biome";
         configFile.addCustomCategoryComment(category,"Biome ID Settings");
-        MinersDelightBiomeID = configFile.getInt("MinersDelightBiomeID",category,40,20,80,"Biome ID for Miners Delight");
+        MinersDelightBiomeID = configFile.getInt("MinersDelightBiomeID",category,40,40,80,"Biome ID for Miners Delight");
 
 
         category = "Items";
@@ -80,6 +82,11 @@ public class config
         FlintForDays = configFile.getBoolean("Flint For Days",category,true,"Should two gravel make flint?");
         LeatherForDays = configFile.getBoolean("Leather For Days",category,true,"Can you make Leather out of Rotting Flesh?");
         CompactUncrafting = configFile.getBoolean("Compact Uncrafting",category,true,"Should Uncrafting of some blocks be Possible?");
+
+
+        category = "Extra Utilities 2";
+        configFile.addCustomCategoryComment(category,"Extra Utils 2 Tweeks");
+        VoidDrums = configFile.getBoolean("Void Drums",category,false,"Can you void liquids by crafting drums?");
 
 
 
