@@ -75,6 +75,7 @@ public class miscblocksitemsandmore
             cookingforblockheads.checkCFB();
             enderio.enderCheck();
             extrautils2.checkUtils2();
+            quantomstorage.quantumCheck();
             quark.checkQuark();
             reliquary.checkXeno();
             rftools.notOPenough();
