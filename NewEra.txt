@@ -1,0 +1,35 @@
+## New Era Tweaks
+
+import minetweaker.item.IItemStack;
+import minetweaker.oredict.IOreDictEntry;
+
+## Silent's Gems
+# Remove tier 1 tools
+
+recipes.removeShaped(<silentgems:Pickaxe>, [[<*>, <*>, <*>], [null, <ore:stickWood>, null], [null, <ore:stickWood>, null]]);
+recipes.removeShaped(<silentgems:Axe>, [[<*>, <*>], [<*>, <ore:stickWood>], [null, <ore:stickWood>]]);
+recipes.removeShaped(<silentgems:Shovel>, [[<*>], [<ore:stickWood>], [<ore:stickWood>]]);
+recipes.removeShaped(<silentgems:Sickle>, [[null, <*>], [<*>, <*>], [<ore:stickWood>, null]]);
+recipes.removeShaped(<silentgems:Sword>, [[<*>], [<*>], [<ore:stickWood>]]);
+
+
+# Remove tier 1 armor
+
+recipes.removeShaped(<silentgems:Helmet>, [[null, <*>, null], [<*>, <silentgems:ArmorFrame:0>, <*>], [null, <*>, null]]);
+recipes.removeShaped(<silentgems:Helmet>, [[null, <*>, null], [<*>, <silentgems:ArmorFrame:4>, <*>], [null, <*>, null]]);
+recipes.removeShaped(<silentgems:Chestplate>, [[null, <*>, null], [<*>, <silentgems:ArmorFrame:1>, <*>], [null, <*>, null]]);
+recipes.removeShaped(<silentgems:Chestplate>, [[null, <*>, null], [<*>, <silentgems:ArmorFrame:5>, <*>], [null, <*>, null]]);
+recipes.removeShaped(<silentgems:Leggings>, [[null, <*>, null], [<*>, <silentgems:ArmorFrame:2>, <*>], [null, <*>, null]]);
+recipes.removeShaped(<silentgems:Leggings>, [[null, <*>, null], [<*>, <silentgems:ArmorFrame:6>, <*>], [null, <*>, null]]);
+recipes.removeShaped(<silentgems:Boots>, [[null, <*>, null], [<*>, <silentgems:ArmorFrame:3>, <*>], [null, <*>, null]]);
+recipes.removeShaped(<silentgems:Boots>, [[null, <*>, null], [<*>, <silentgems:ArmorFrame:7>, <*>], [null, <*>, null]]);
+
+
+# Increase cost of enchantment tokens
+
+recipes.removeShaped(<silentgems:EnchantmentToken>, [[<ore:gemSapphire>, null, <ore:gemSapphire>], [<ore:ingotIron>, <silentgems:EnchantmentToken>, <ore:ingotIron>], [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
+recipes.removeShaped(<silentgems:EnchantmentToken>, [[<ore:gemTurquoise>, null, <ore:gemTurquoise>], [null, <silentgems:EnchantmentToken>, null], [<ore:gemEmerald>, null, <ore:gemEmerald>]]);
+recipes.addShaped(<silentgems:EnchantmentToken>.withTag({ench: [{lvl: 1 as short, id: 34 as short}]}), [[<ore:gemSapphire>, null, <ore:gemSapphire>], [<ore:obsidian>, <silentgems:EnchantmentToken>, <ore:obsidian>], [<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
+recipes.addShaped(<silentgems:EnchantmentToken>.withTag({ench: [{lvl: 1 as short, id: 21 as short}]}), [[<ore:gemTurquoise>, null, <ore:gemTurquoise>], [null, <silentgems:EnchantmentToken>, null], [<ore:gemEmerald>, <ore:gemDiamond>, <ore:gemEmerald>]]);
+
+
