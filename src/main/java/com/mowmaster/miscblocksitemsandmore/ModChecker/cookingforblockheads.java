@@ -1,5 +1,6 @@
 package com.mowmaster.miscblocksitemsandmore.ModChecker;
 
+import com.mowmaster.miscblocksitemsandmore.Configs.config;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -17,30 +18,25 @@ import static net.minecraft.init.Blocks.LOG;
 
 public class cookingforblockheads
 {
-    public static void checkCFB()
-    {
-        if (Loader.isModLoaded("cookingforblockheads"))
-        {
-            Item CFBTable = Item.REGISTRY.getObject(new ResourceLocation("cookingforblockheads:cookingTable"));
-            Item CFBCounter = Item.REGISTRY.getObject(new ResourceLocation("cookingforblockheads:counter"));
-            Item CFBBook = Item.REGISTRY.getObject(new ResourceLocation("cookingforblockheads:recipeBook"));
-            //version 3 of the book = meta 2
+    public static void checkCFB() {
+        if (config.NewEraTweaks) {
+            if (Loader.isModLoaded("cookingforblockheads")) {
+                Item CFBTable = Item.REGISTRY.getObject(new ResourceLocation("cookingforblockheads:cookingTable"));
+                Item CFBCounter = Item.REGISTRY.getObject(new ResourceLocation("cookingforblockheads:counter"));
+                Item CFBBook = Item.REGISTRY.getObject(new ResourceLocation("cookingforblockheads:recipeBook"));
+                //version 3 of the book = meta 2
 
 
+                //Removed Recipies
+                removeCrafting(CFBTable);
 
 
-            //Removed Recipies
-            removeCrafting(CFBTable);
+                //Added Recipies
+                GameRegistry.addShapedRecipe(new ItemStack(CFBCounter, 1), new Object[]{"X", "Y", 'X', new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15), 'Y', new ItemStack(Blocks.CHEST)});
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(CFBTable, 1), new Object[]{"XXX", "YZY", "YYY", 'X', new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15), 'Y', "logWood", 'Z', new ItemStack(CFBBook, 1, 2)}));
 
 
-            //Added Recipies
-            GameRegistry.addShapedRecipe(new ItemStack(CFBCounter,1), new Object[]{"X","Y", 'X',new ItemStack(Blocks.STAINED_HARDENED_CLAY,1,15),'Y', new ItemStack(Blocks.CHEST)});
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(CFBTable,1), new Object[]{"XXX","YZY", "YYY", 'X',new ItemStack(Blocks.STAINED_HARDENED_CLAY,1,15),'Y', "logWood",'Z', new ItemStack(CFBBook,1,2)}));
-
-
-
-
-
+            }
         }
     }
 }

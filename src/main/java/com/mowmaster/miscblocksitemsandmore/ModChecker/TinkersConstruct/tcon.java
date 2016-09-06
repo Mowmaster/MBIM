@@ -1,5 +1,6 @@
 package com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct;
 
+import com.mowmaster.miscblocksitemsandmore.Configs.config;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -19,25 +20,24 @@ public class tcon
 {
     public static void checkTCon()
     {
-        if (Loader.isModLoaded("tconstruct"))
-        {
-            Item ThrowBall = Item.REGISTRY.getObject(new ResourceLocation("tconstruct:throwball"));
-            Item TCMSlimeCrystal = Item.REGISTRY.getObject(new ResourceLocation("tconstruct:materials"));
+        if (config.NewEraTweaks) {
+            if (Loader.isModLoaded("tconstruct")) {
+                Item ThrowBall = Item.REGISTRY.getObject(new ResourceLocation("tconstruct:throwball"));
+                Item TCMSlimeCrystal = Item.REGISTRY.getObject(new ResourceLocation("tconstruct:materials"));
 
 
+                //Removed Recipies
+                removeCrafting(ThrowBall);
 
 
-            //Removed Recipies
-            removeCrafting(ThrowBall);
+                //Added Recipies
+                //EFLN
+                GameRegistry.addShapedRecipe(new ItemStack(ThrowBall, 2, 1), new Object[]{"XYX", "YZY", "XYX", 'X', new ItemStack(Items.GUNPOWDER, 1), 'Y', new ItemStack(Items.MAGMA_CREAM, 1), 'Z', new ItemStack(TCMSlimeCrystal, 1, 11)});
+                //GlowstoneThrowableThingy
+                GameRegistry.addShapedRecipe(new ItemStack(ThrowBall, 4, 0), new Object[]{"XXX", "XYX", "XXX", 'X', new ItemStack(Items.SNOWBALL, 1), 'Y', new ItemStack(Items.GLOWSTONE_DUST)});
 
 
-            //Added Recipies
-            //EFLN
-            GameRegistry.addShapedRecipe(new ItemStack(ThrowBall,2,1), new Object[]{"XYX","YZY","XYX", 'X', new ItemStack(Items.GUNPOWDER, 1), 'Y',new ItemStack(Items.MAGMA_CREAM,1),'Z', new ItemStack(TCMSlimeCrystal,1,11)});
-            //GlowstoneThrowableThingy
-            GameRegistry.addShapedRecipe(new ItemStack(ThrowBall,4,0), new Object[]{"XXX","XYX","XXX", 'X', new ItemStack(Items.SNOWBALL, 1), 'Y',new ItemStack(Items.GLOWSTONE_DUST)});
-
-
+            }
         }
 
     }

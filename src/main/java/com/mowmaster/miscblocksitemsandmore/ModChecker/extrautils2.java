@@ -20,35 +20,30 @@ import static com.mowmaster.miscblocksitemsandmore.recipies.removeRecipies.remov
 
 public class extrautils2
 {
-    public static void checkUtils2()
-    {
-        if (Loader.isModLoaded("ExtraUtils2"))
-        {
-            Item EU2Pipe = Item.REGISTRY.getObject(new ResourceLocation("extrautils2:pipe"));
-            Item EU2Drum = Item.REGISTRY.getObject(new ResourceLocation("extrautils2:Drum"));
+    public static void checkUtils2() {
+        if (config.NewEraTweaks) {
+            if (Loader.isModLoaded("ExtraUtils2")) {
+                Item EU2Pipe = Item.REGISTRY.getObject(new ResourceLocation("extrautils2:pipe"));
+                Item EU2Drum = Item.REGISTRY.getObject(new ResourceLocation("extrautils2:Drum"));
 
 
+                //Removed Recipies
+                removeCrafting(EU2Pipe);
 
 
-            //Removed Recipies
-            removeCrafting(EU2Pipe);
+                //Added Recipies
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(EU2Pipe, 8), new Object[]{"XXX", "YZY", "XXX", 'X', new ItemStack(Blocks.STONE_SLAB), 'Y', "blockGlass", 'Z', new ItemStack(Items.REDSTONE)}));
+
+                if (config.VoidDrums == true) {
+                    GameRegistry.addShapelessRecipe(new ItemStack(EU2Drum, 1, 0), new ItemStack(EU2Drum, 1, 0));
+                    GameRegistry.addShapelessRecipe(new ItemStack(EU2Drum, 1, 1), new ItemStack(EU2Drum, 1, 1));
+                    GameRegistry.addShapelessRecipe(new ItemStack(EU2Drum, 1, 2), new ItemStack(EU2Drum, 1, 2));
+                    GameRegistry.addShapelessRecipe(new ItemStack(EU2Drum, 1, 3), new ItemStack(EU2Drum, 1, 3));
+                    GameRegistry.addShapelessRecipe(new ItemStack(EU2Drum, 1, 4), new ItemStack(EU2Drum, 1, 4));
+                }
 
 
-            //Added Recipies
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(EU2Pipe,8), new Object[]{"XXX","YZY", "XXX", 'X',new ItemStack(Blocks.STONE_SLAB),'Y', "blockGlass",'Z', new ItemStack(Items.REDSTONE)}));
-
-            if (config.VoidDrums == true)
-            {
-                GameRegistry.addShapelessRecipe(new ItemStack(EU2Drum, 1, 0), new ItemStack(EU2Drum, 1, 0));
-                GameRegistry.addShapelessRecipe(new ItemStack(EU2Drum, 1, 1), new ItemStack(EU2Drum, 1, 1));
-                GameRegistry.addShapelessRecipe(new ItemStack(EU2Drum, 1, 2), new ItemStack(EU2Drum, 1, 2));
-                GameRegistry.addShapelessRecipe(new ItemStack(EU2Drum, 1, 3), new ItemStack(EU2Drum, 1, 3));
-                GameRegistry.addShapelessRecipe(new ItemStack(EU2Drum, 1, 4), new ItemStack(EU2Drum, 1, 4));
             }
-
-
-
-
         }
     }
 }

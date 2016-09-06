@@ -32,9 +32,6 @@ public class config
     public static boolean VoidDrums;
 
 
-    public static int MinersDelightBiomeID;
-
-
     public static void initConfig(File file)
     {
         configFile = new Configuration(file);
@@ -50,11 +47,7 @@ public class config
         //configFile.addCustomCategoryComment(category,"Harder Recipes");
 
         //harderRecipes = configFile.getBoolean("Harder Recipes",category,false,"Are the default recipes to easy for a pro like you?");
-        //rftoolsHARD = configFile.getBoolean("Harder Recipes for RFTools",category,false,"For those who don't want to make dimensions in your first 10 minutes of playing");
-
-        category = "Biome";
-        configFile.addCustomCategoryComment(category,"Biome ID Settings");
-        MinersDelightBiomeID = configFile.getInt("MinersDelightBiomeID",category,40,40,80,"Biome ID for Miners Delight");
+        //rftoolsHARD = configFile.getBoolean("Harder Recipes for RFTools",category,false,"For those who don't want to make dimensions in your first 10 minutes of playing")
 
 
         category = "Items";

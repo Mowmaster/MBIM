@@ -1,5 +1,6 @@
 package com.mowmaster.miscblocksitemsandmore.ModChecker;
 
+import com.mowmaster.miscblocksitemsandmore.Configs.config;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -13,16 +14,16 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  */
 public class enderio
 {
-    public static void enderCheck()
-    {
-        if (Loader.isModLoaded("EnderIO"))
-        {
+    public static void enderCheck() {
+        if (config.NewEraTweaks) {
+            if (Loader.isModLoaded("EnderIO")) {
 
-            Item EIInvPan = Item.REGISTRY.getObject(new ResourceLocation("enderio:blockInventoryPanel"));
-            Item EITravStaf = Item.REGISTRY.getObject(new ResourceLocation("enderio:itemTravelStaff"));
-            Item EIRemInv = Item.REGISTRY.getObject(new ResourceLocation("enderio:itemRemoteInvAccess"));
+                Item EIInvPan = Item.REGISTRY.getObject(new ResourceLocation("enderio:blockInventoryPanel"));
+                Item EITravStaf = Item.REGISTRY.getObject(new ResourceLocation("enderio:itemTravelStaff"));
+                Item EIRemInv = Item.REGISTRY.getObject(new ResourceLocation("enderio:itemRemoteInvAccess"));
 
-            GameRegistry.addShapedRecipe(new ItemStack(EIRemInv,1), "  X", "XYX", "XZX", 'X', Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE, 'Y',EIInvPan,'Z', EITravStaf);
+                GameRegistry.addShapedRecipe(new ItemStack(EIRemInv, 1), "  X", "XYX", "XZX", 'X', Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE, 'Y', EIInvPan, 'Z', EITravStaf);
+            }
         }
     }
 }

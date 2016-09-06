@@ -1,5 +1,6 @@
 package com.mowmaster.miscblocksitemsandmore.ModChecker;
 
+import com.mowmaster.miscblocksitemsandmore.Configs.config;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -12,12 +13,12 @@ import static com.mowmaster.miscblocksitemsandmore.recipies.removeRecipies.remov
  */
 public class reliquary
 {
-    public static void checkXeno()
-    {
-        if (Loader.isModLoaded("xreliquary"))
-        {
-            removeCrafting(Item.REGISTRY.getObject(new ResourceLocation("xreliquary:alkahestry_tome")));
-        }
+    public static void checkXeno() {
+        if (config.NewEraTweaks) {
+            if (Loader.isModLoaded("xreliquary")) {
+                removeCrafting(Item.REGISTRY.getObject(new ResourceLocation("xreliquary:alkahestry_tome")));
+            }
 
+        }
     }
 }
