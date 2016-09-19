@@ -21,13 +21,13 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import java.io.File;
 
 
-@Mod(modid = reference.MODID, name = reference.MODNAME, version = reference.VERSION)
+@Mod(modid = reference.modid, name = reference.modname, version = reference.version)
 public class miscblocksitemsandmore
 {
-    @Mod.Instance(reference.MODID)
+    @Mod.Instance(reference.modid)
     public static miscblocksitemsandmore instance;
 
-    @SidedProxy(serverSide = reference.SERVERSIDE, clientSide = reference.CLIENTSIDE)
+    @SidedProxy(serverSide = reference.serverside, clientSide = reference.clientside)
     public static CommonProxy proxy;
 
 
@@ -40,9 +40,9 @@ public class miscblocksitemsandmore
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        configDir = new File(event.getModConfigurationDirectory() + "/" + reference.MODID);
+        configDir = new File(event.getModConfigurationDirectory() + "/" + reference.modid);
         configDir.mkdirs();
-        config.initConfig(new File(configDir.getPath(), reference.MODID + ".cfg"));
+        config.initConfig(new File(configDir.getPath(), reference.modid + ".cfg"));
         ItemRegistry.registerBottles();
 
     }
@@ -51,41 +51,35 @@ public class miscblocksitemsandmore
     {
         proxy.preInit();
         MinecraftForge.EVENT_BUS.register(this);
-        tconintegration.checkTCon2();
-        forestryintegration.checktheForest();
-
 
     }
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
+        tconintegration.checkTCon2();
+        forestryintegration.checktheForest();
 
+        removeRecipies.removedCraftingItems();
+        removeRecipies.removedSmeltingItems();
+        enderio.enderCheck();
+        extrautils2.checkUtils2();
+        quantomstorage.quantumCheck();
+        quark.checkQuark();
+        reliquary.checkXeno();
+        rftools.notOPenough();
+        silentsgems.checkSG();
+        substratum.checkSub();
+        tcon.checkTCon();
+
+        addRecipies.bR();
     }
-    @SubscribeEvent
-    public void worldLoad(WorldEvent.Load event)
+/*
+    @Mod.EventHandler
+    public void serverStarted(FMLServerStartedEvent event)
     {
-        if (event.getWorld().isRemote && event.getWorld() != null && event.getWorld().provider.getDimension() == 0)
-        {
-            cookingforblockheads.checkCFB();
-            enderio.enderCheck();
-            extrautils2.checkUtils2();
-            quantomstorage.quantumCheck();
-            quark.checkQuark();
-            reliquary.checkXeno();
-            rftools.notOPenough();
-            silentsgems.checkSG();
-            substratum.checkSub();
-            tcon.checkTCon();
-            removeRecipies.removedCraftingItems();
-            removeRecipies.removedSmeltingItems();
-
-
-            addRecipies.bR();
-
-
-        }
 
     }
+    */
 
 
 }

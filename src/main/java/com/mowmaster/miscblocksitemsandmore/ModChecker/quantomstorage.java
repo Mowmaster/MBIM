@@ -17,12 +17,15 @@ public class quantomstorage
         if (config.NewEraTweaks) {
             if (Loader.isModLoaded("QuantumStorage")) {
                 Item QStorage = Item.REGISTRY.getObject(new ResourceLocation("quantumstorage:quantumdsu"));
+                Item QTank = Item.REGISTRY.getObject(new ResourceLocation("quantumstorage:quantumtank"));
                 Item SDupgrade = Item.REGISTRY.getObject(new ResourceLocation("storagedrawers:upgradeStorage"));
                 Item ICchest = Item.REGISTRY.getObject(new ResourceLocation("ironchest:BlockIronChest"));
 
                 removeCrafting(QStorage);
+                removeCrafting(QTank);
 
                 GameRegistry.addShapedRecipe(new ItemStack(QStorage, 1), "XYX", "XZX", "XYX", 'X', new ItemStack(SDupgrade, 1, 2), 'Y', new ItemStack(ICchest, 1, 4), 'Z', Items.EMERALD);
+                GameRegistry.addShapedRecipe(new ItemStack(QTank, 1), "XYX", "XZX", "XYX", 'X', new ItemStack(SDupgrade, 1, 2), 'Y', new ItemStack(ICchest, 1, 4), 'Z', Items.BUCKET);
             }
         }
     }
