@@ -34,6 +34,7 @@ public class addRecipies
             if (config.HammaTime) {
             // Added to smash and crush things when needed
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(tool_hammer, 1), new Object[]{"XXX", "XYX", " Y ", 'X', "ingotIron", 'Y', Items.STICK}));
+
             }
         //Vanilla Tweaks
             if (config.FlintForDays) {

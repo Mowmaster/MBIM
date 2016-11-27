@@ -32,10 +32,11 @@ public class tconintegration
                 TinkerRegistry.registerMelting(castCustom, brass, 144);
                 TinkerRegistry.registerMelting(clayCast, clay, 288);
                 // Ways to get Steel
-                TinkerRegistry.registerMelting(Items.CHAINMAIL_HELMET, steel, 720);
-                TinkerRegistry.registerMelting(Items.CHAINMAIL_CHESTPLATE, steel, 1152);
-                TinkerRegistry.registerMelting(Items.CHAINMAIL_LEGGINGS, steel, 1008);
-                TinkerRegistry.registerMelting(Items.CHAINMAIL_BOOTS, steel, 576);
+                //Using Itemstack required an unbroken items to be meltable
+                TinkerRegistry.registerMelting(new ItemStack(Items.CHAINMAIL_HELMET), steel, 720);
+                TinkerRegistry.registerMelting(new ItemStack(Items.CHAINMAIL_CHESTPLATE), steel, 1152);
+                TinkerRegistry.registerMelting(new ItemStack(Items.CHAINMAIL_LEGGINGS), steel, 1008);
+                TinkerRegistry.registerMelting(new ItemStack(Items.CHAINMAIL_BOOTS), steel, 576);
 
                 if (config.RecyclableGlass) {
                     // Glass Recycling

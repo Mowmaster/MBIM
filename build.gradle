@@ -20,12 +20,12 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "0.1.5"
+version = "0.1.9"
 group= "com.mowmaster.miscblocksitemsandmore" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "miscblocksitemsandmore"
+archivesBaseName = "NEoA"
 
 minecraft {
-    version = "1.10.2-12.18.1.2044"
+    version = "1.10.2-12.18.2.2121"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.
@@ -42,8 +42,8 @@ repositories {
 }
 
 dependencies {
-    deobfCompile "slimeknights.mantle:Mantle:1.10-0.10.+"
-    deobfCompile "slimeknights:TConstruct:1.10-2.4.+"
+    deobfCompile "slimeknights.mantle:Mantle:1.10.2-1.+"
+    deobfCompile "slimeknights:TConstruct:1.10.2-2.+"
 
     //deobfCompile "com.wayoftime.bloodmagic:BloodMagic:<2.0.+>"
 

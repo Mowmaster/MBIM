@@ -34,8 +34,7 @@ public class rftools
 
             if (config.NewEraTweaks)
             {
-                if (config.rfTooOP)
-                {
+                    Item Controler = Item.REGISTRY.getObject(new ResourceLocation("advgenerators:Controler"));
                     Item IronFrame = Item.REGISTRY.getObject(new ResourceLocation("advgenerators:IronFrame"));
                     Item EnderiumDust = Item.REGISTRY.getObject(new ResourceLocation("substratum:dust"));
 
@@ -47,16 +46,15 @@ public class rftools
 
 
 
-                    GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(MachineFrame,1), new Object[]{"XYX","Y Y", "XYX", 'X',"rodIron",'Y', IronFrame}));
+                    GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(MachineFrame,1), new Object[]{"XYX","YZY", "XYX", 'X',"rodSteel",'Y', "plateSteel", 'Z', Controler}));
                     GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(CoalGen,1), new Object[]{"XYX","ZAZ", "BBB", 'X',Blocks.REDSTONE_TORCH,'Y',"dustRedstone" ,'Z',"gearIron",'A',Blocks.FURNACE,'B',"blockCoal"}));
-                    GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Builder,1), new Object[]{"XYX","ZAZ", "XZX", 'X',"ingotEnderium",'Y', "gearIron",'Z',IronFrame,'A',MachineFrame}));
+                    GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Builder,1), new Object[]{"XYX","ZAZ", "XZX", 'X',"ingotEnderium",'Y', "gearSteel",'Z',IronFrame,'A',MachineFrame}));
                     GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModularStorage,1), new Object[]{"XYX","ZAZ", "XZX", 'X',Items.REDSTONE,'Y', new ItemStack(ICchest,1,4),'Z',Blocks.QUARTZ_BLOCK,'A',MachineFrame}));
 
 
                     GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(enderium_blend_dust,1), new ItemStack(tool_hammer.setContainerItem(tool_hammer)),"ingotEnderiumBase"));
                     GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(fake_pyrothium,1), "toolMixingbowl","dustGlowstone","dustRedstone","dustBlaze"));
                     GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(EnderiumDust,1,19), "toolMixingbowl",fake_pyrothium,enderium_blend_dust));
-                }
             }
         }
     }

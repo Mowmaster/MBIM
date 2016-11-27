@@ -13,38 +13,29 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/mantle/Mantle/1.10-0.10.3.jenkins158/Mantle-1.10-0.10.3.jenkins158.jar!/"/>
+          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/mantle/Mantle/1.10.2-1.1.1.194/Mantle-1.10.2-1.1.1.194.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES>
-          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/mantle/Mantle/1.10-0.10.3.jenkins158/Mantle-1.10-0.10.3.jenkins158-sources.jar!/"/>
+          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/mantle/Mantle/1.10.2-1.1.1.194/Mantle-1.10.2-1.1.1.194-sources.jar!/"/>
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/TConstruct/1.10-2.3.3.jenkins269/TConstruct-1.10-2.3.3.jenkins269.jar!/"/>
+          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/TConstruct/1.10.2-2.5.6.439/TConstruct-1.10.2-2.5.6.439.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES>
-          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/TConstruct/1.10-2.3.3.jenkins269/TConstruct-1.10-2.3.3.jenkins269-sources.jar!/"/>
+          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/TConstruct/1.10.2-2.5.6.439/TConstruct-1.10.2-2.5.6.439-sources.jar!/"/>
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/BloodMagic-1.9.4-2.0.3-53-api.jar!/"/>
-        </CLASSES>
-        <JAVADOC/>
-        <SOURCES/>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/forestry_1.10.2-5.2.2.207-api.jar!/"/>
+          <root url="jar://$MODULE_DIR$/libs/forestry_1.7.10-4.2.16.64-api.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES/>
@@ -250,7 +241,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/modules-2/files-2.1/com.mojang/realms/1.9.3/b291425bf7ef763452eaa894575018706339f72b/realms-1.9.3.jar!/"/>
+          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/modules-2/files-2.1/com.mojang/realms/1.9.8/c9609760e050cd7c369292252552c0cc81c54331/realms-1.9.8.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES/>
@@ -719,18 +710,18 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.1.2044/snapshot/20160518/forgeSrc-1.10.2-12.18.1.2044.jar!/"/>
+          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2121/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2121.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES>
-          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.1.2044/snapshot/20160518/forgeSrc-1.10.2-12.18.1.2044-sources.jar!/"/>
+          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2121/snapshot/20160518/forgeSrc-1.10.2-12.18.2.2121-sources.jar!/"/>
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="RUNTIME">
       <library>
         <CLASSES>
-          <root url="file://C:/Users/KingMowmaster/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.1.2044/start"/>
+          <root url="file://C:/Users/KingMowmaster/.gradle/caches/minecraft/net/minecraftforge/forge/1.10.2-12.18.2.2121/start"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES/>

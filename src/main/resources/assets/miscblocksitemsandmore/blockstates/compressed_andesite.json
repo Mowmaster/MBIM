@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "variant=andesite": {
+      "model": "miscblocksitemsandmore:andesite/compressed_andesite"
+    },
+    "variant=andesite_double": {
+      "model": "miscblocksitemsandmore:andesite/compressed_andesite_double"
+    },
+    "variant=andesite_tripple": {
+      "model": "miscblocksitemsandmore:andesite/compressed_andesite_tripple"
+    },
+    "variant=andesite_quadrupple": {
+      "model": "miscblocksitemsandmore:andesite/compressed_andesite_quadrupple"
+    },
+    "variant=andesite_quintupple": {
+      "model": "miscblocksitemsandmore:andesite/compressed_andesite_quintupple"
+    },
+    "variant=andesite_sixtupple": {
+      "model": "miscblocksitemsandmore:andesite/compressed_andesite_sixtupple"
+    },
+    "variant=andesite_septupple": {
+      "model": "miscblocksitemsandmore:andesite/compressed_andesite_septupple"
+    },
+    "variant=andesite_octupple": {
+      "model": "miscblocksitemsandmore:andesite/compressed_andesite_octupple"
+    }
+  }
+}

@@ -4,19 +4,20 @@ package com.mowmaster.miscblocksitemsandmore;
 import com.mowmaster.miscblocksitemsandmore.Configs.config;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.*;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.Forestry.forestryintegration;
+import com.mowmaster.miscblocksitemsandmore.ModChecker.railcraft;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct.tcon;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct.tconintegration;
+import com.mowmaster.miscblocksitemsandmore.block.blockreg;
 import com.mowmaster.miscblocksitemsandmore.item.ItemRegistry;
 import com.mowmaster.miscblocksitemsandmore.proxies.CommonProxy;
 import com.mowmaster.miscblocksitemsandmore.recipies.addRecipies;
+import com.mowmaster.miscblocksitemsandmore.recipies.oredictionaryEntries;
 import com.mowmaster.miscblocksitemsandmore.recipies.removeRecipies;
 import com.mowmaster.miscblocksitemsandmore.references.reference;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.*;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import java.io.File;
 
@@ -43,7 +44,9 @@ public class miscblocksitemsandmore
         configDir = new File(event.getModConfigurationDirectory() + "/" + reference.modid);
         configDir.mkdirs();
         config.initConfig(new File(configDir.getPath(), reference.modid + ".cfg"));
+        blockreg.cbreg();
         ItemRegistry.registerBottles();
+        oredictionaryEntries.addEntries();
 
     }
     @Mod.EventHandler
@@ -56,6 +59,7 @@ public class miscblocksitemsandmore
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
+        
         tconintegration.checkTCon2();
         forestryintegration.checktheForest();
 
@@ -63,13 +67,16 @@ public class miscblocksitemsandmore
         removeRecipies.removedSmeltingItems();
         enderio.enderCheck();
         extrautils2.checkUtils2();
+        miscfixes.miscfixescheck();
         quantomstorage.quantumCheck();
         quark.checkQuark();
+        railcraft.checkrails();
         reliquary.checkXeno();
         rftools.notOPenough();
-        silentsgems.checkSG();
+        scm.scmcheck();
         substratum.checkSub();
         tcon.checkTCon();
+        tson.tsoncheck();
 
         addRecipies.bR();
     }

@@ -16,18 +16,16 @@ public class config
     public static Configuration configFile;
 
 
-    //Make Glass Recyclable?
+
     public static boolean RecyclableGlass;
     public static boolean FlintForDays;
     public static boolean LeatherForDays;
     public static boolean CompactUncrafting;
     public static boolean HammaTime;
     public static boolean harderRecipes;
-    public static boolean rftoolsHARD;
 
 
     public static boolean NewEraTweaks;
-    public static boolean rfTooOP;
 
     public static boolean VoidDrums;
 
@@ -64,7 +62,6 @@ public class config
         configFile.addCustomCategoryComment(category,"New Era Tweaks");
 
         NewEraTweaks = configFile.getBoolean("New Era Tweaks",category,true,"Are you playing the modpack 'New Era'?");
-        rfTooOP = configFile.getBoolean("RFTools Too Op",category,true,"Nerfing RFTools is so much fun!");
 
 
 
