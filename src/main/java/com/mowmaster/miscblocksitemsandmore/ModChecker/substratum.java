@@ -109,8 +109,8 @@ public class substratum
 
 
                 //Added Steel Dust
-                GameRegistry.addShapelessRecipe(new ItemStack(SDust, 1, 12), new ItemStack(SDust, 1, 1), new ItemStack(SDust, 1, 20), new ItemStack(SDust, 1, 20));
-                GameRegistry.addShapelessRecipe(new ItemStack(SDust, 1, 12), new ItemStack(SDust, 1, 1), new ItemStack(SDust, 1, 0));
+                //GameRegistry.addShapelessRecipe(new ItemStack(SDust, 1, 12), new ItemStack(SDust, 1, 1), new ItemStack(SDust, 1, 20), new ItemStack(SDust, 1, 20));
+                //GameRegistry.addShapelessRecipe(new ItemStack(SDust, 1, 12), new ItemStack(SDust, 1, 1), new ItemStack(SDust, 1, 0));
 
 
             }

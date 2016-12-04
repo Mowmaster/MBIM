@@ -38,14 +38,19 @@ minecraft {
 	}
 repositories {
     maven { url "http://dvs1.progwml6.com/files/maven" }//Tinkers
+	
+	//maven { url "https://maven.chaosfield.at/de/ellpeck/actuallyadditions/" }//Actually Additions
+	
     //maven { url "http://tehnut.info/maven/" }//Blood Magic
 }
 
 dependencies {
     deobfCompile "slimeknights.mantle:Mantle:1.10.2-1.+"
     deobfCompile "slimeknights:TConstruct:1.10.2-2.+"
-
-    //deobfCompile "com.wayoftime.bloodmagic:BloodMagic:<2.0.+>"
+	
+	//deobfCompile "ActuallyAdditions:1.10.+"
+	
+	//deobfCompile "com.wayoftime.bloodmagic:BloodMagic:<2.0.+>"
 
 }
 

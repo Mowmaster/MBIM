@@ -13,23 +13,43 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/mantle/Mantle/1.10.2-1.1.1.194/Mantle-1.10.2-1.1.1.194.jar!/"/>
+          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/mantle/Mantle/1.10.2-1.1.2.198/Mantle-1.10.2-1.1.2.198.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES>
-          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/mantle/Mantle/1.10.2-1.1.1.194/Mantle-1.10.2-1.1.1.194-sources.jar!/"/>
+          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/mantle/Mantle/1.10.2-1.1.2.198/Mantle-1.10.2-1.1.2.198-sources.jar!/"/>
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/TConstruct/1.10.2-2.5.6.439/TConstruct-1.10.2-2.5.6.439.jar!/"/>
+          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/TConstruct/1.10.2-2.6.0.458/TConstruct-1.10.2-2.6.0.458.jar!/"/>
         </CLASSES>
         <JAVADOC/>
         <SOURCES>
-          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/TConstruct/1.10.2-2.5.6.439/TConstruct-1.10.2-2.5.6.439-sources.jar!/"/>
+          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/slimeknights/TConstruct/1.10.2-2.6.0.458/TConstruct-1.10.2-2.6.0.458-sources.jar!/"/>
         </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/mezz/jei/jei_1.10.2/3.13.6.387/jei_1.10.2-3.13.6.387.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar://C:/Users/KingMowmaster/.gradle/caches/minecraft/deobfedDeps/deobf/mezz/jei/jei_1.10.2/3.13.6.387/jei_1.10.2-3.13.6.387-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/ActuallyAdditions-1.10.2-r75-api.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES/>
       </library>
     </orderEntry>
     <orderEntry type="module-library">

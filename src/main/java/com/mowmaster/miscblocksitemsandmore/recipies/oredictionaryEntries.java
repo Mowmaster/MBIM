@@ -14,9 +14,9 @@ import static com.mowmaster.miscblocksitemsandmore.item.ItemRegistry.fake_pyroth
  */
 public class oredictionaryEntries
 {
-
     public static void addEntries()
     {
         OreDictionary.registerOre("dustPyrothium",fake_pyrothium);
     }
+
 }
