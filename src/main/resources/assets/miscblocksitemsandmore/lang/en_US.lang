@@ -9,3 +9,5 @@ item.enderium_blend_dust.name=Powdered Enderium Blend
 item.fake_pyrothium.name=Fake Pyrothium
 
 generator.Miners Delight=Miners Delight
+
+tile.compressed_andesite.compressed_andesite.name=Compressed Andesite

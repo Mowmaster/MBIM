@@ -3,6 +3,7 @@ package com.mowmaster.miscblocksitemsandmore;
 
 import com.mowmaster.miscblocksitemsandmore.Configs.config;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.*;
+import com.mowmaster.miscblocksitemsandmore.ModChecker.ActuallyAdditions.actuallyadditionsintegration;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.Forestry.forestryintegration;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.railcraft;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct.tcon;
@@ -48,6 +49,7 @@ public class miscblocksitemsandmore
         ItemRegistry.registerBottles();
         oredictionaryEntries.addEntries();
 
+
     }
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
@@ -55,11 +57,13 @@ public class miscblocksitemsandmore
         proxy.preInit();
         MinecraftForge.EVENT_BUS.register(this);
 
+
     }
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-        
+
+        actuallyadditionsintegration.checkActually();
         tconintegration.checkTCon2();
         forestryintegration.checktheForest();
 
