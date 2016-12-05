@@ -45,6 +45,7 @@ public class ClientProxy extends CommonProxy
 
             ModelLoader.setCustomModelResourceLocation(itemandesite, meta, new ModelResourceLocation("miscblocksitemsandmore:andesite/" + compressedandesite.types[meta], "inventory"));
 
+
         }
         MinecraftForge.EVENT_BUS.register(this);
     }
