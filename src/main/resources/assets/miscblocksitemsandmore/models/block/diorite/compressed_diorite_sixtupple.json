@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "miscblocksitemsandmore:blocks/diorite/compressed_diorite_sixtupple"
-  }
-}

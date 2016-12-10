@@ -5,6 +5,7 @@ import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionAbsorption;
 import net.minecraft.util.ResourceLocation;
@@ -52,5 +53,11 @@ public class addRecipies
                 GameRegistry.addShapelessRecipe(new ItemStack(Items.MAGMA_CREAM, 4), new ItemStack(Block.getBlockFromName("magma"), 1));
             }
 
+
+        Item IEmachinepart = Item.REGISTRY.getObject(new ResourceLocation("immersiveengineering:metalDecoration0"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(tool_crusher,1), new Object[]{"XXX","YZY","AAA", 'X', "gearSteel", 'Y', new ItemStack(IEmachinepart,1,5),'Z',"cobblestone",'A', "blockSteel"}));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.COBBLESTONE), new Object[]{"XY", 'X', "stoneGranite", 'Y', new ItemStack(tool_crusher.setContainerItem(tool_crusher))}));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.COBBLESTONE), new Object[]{"XY", 'X', "stoneDiorite", 'Y', new ItemStack(tool_crusher.setContainerItem(tool_crusher))}));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.COBBLESTONE), new Object[]{"XY", 'X', "stoneAndesite", 'Y', new ItemStack(tool_crusher.setContainerItem(tool_crusher))}));
     }
 }

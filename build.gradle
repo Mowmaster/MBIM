@@ -20,12 +20,12 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "0.1.9"
+version = "0.2.1"
 group= "com.mowmaster.miscblocksitemsandmore" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "NEoA"
 
 minecraft {
-    version = "1.10.2-12.18.2.2121"
+    version = "1.10.2-12.18.2.2185"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.
@@ -37,19 +37,31 @@ minecraft {
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 	}
 repositories {
-    maven { url "http://dvs1.progwml6.com/files/maven" }//Tinkers
+    maven {//Tinkers
+        name 'Tinkerers Maven'
+        url 'http://dvs1.progwml6.com/files/maven'
+    }
+/*
+    maven {//Actually Additions
+        name 'Actualy Additions'
+        url 'https://maven.chaosfield.at/de/ellpeck/'
+    }
 	
-	//maven { url "https://maven.chaosfield.at/de/ellpeck/actuallyadditions/" }//Actually Additions
+	//maven {//Blood Magic
+		name 'Way of Time Maven'
+		url 'http://tehnut.info/maven/'
+		}
 	
-    //maven { url "http://tehnut.info/maven/" }//Blood Magic
+	
+	
+*/
+    
 }
 
 dependencies {
     deobfCompile "slimeknights.mantle:Mantle:1.10.2-1.+"
     deobfCompile "slimeknights:TConstruct:1.10.2-2.+"
-	
-	//deobfCompile "ActuallyAdditions:1.10.+"
-	
+	//deobfCompile "actuallyadditions:ActuallyAdditions:1.10.2-r+"
 	//deobfCompile "com.wayoftime.bloodmagic:BloodMagic:<2.0.+>"
 
 }

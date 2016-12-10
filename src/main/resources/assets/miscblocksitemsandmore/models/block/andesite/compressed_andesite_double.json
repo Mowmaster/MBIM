@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "miscblocksitemsandmore:blocks/andesite/compressed_andesite_double"
-  }
-}

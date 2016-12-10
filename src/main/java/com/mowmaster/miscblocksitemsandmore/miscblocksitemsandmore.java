@@ -8,7 +8,6 @@ import com.mowmaster.miscblocksitemsandmore.ModChecker.Forestry.forestryintegrat
 import com.mowmaster.miscblocksitemsandmore.ModChecker.railcraft;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct.tcon;
 import com.mowmaster.miscblocksitemsandmore.ModChecker.TinkersConstruct.tconintegration;
-import com.mowmaster.miscblocksitemsandmore.block.blockreg;
 import com.mowmaster.miscblocksitemsandmore.item.ItemRegistry;
 import com.mowmaster.miscblocksitemsandmore.proxies.CommonProxy;
 import com.mowmaster.miscblocksitemsandmore.recipies.addRecipies;
@@ -45,7 +44,7 @@ public class miscblocksitemsandmore
         configDir = new File(event.getModConfigurationDirectory() + "/" + reference.modid);
         configDir.mkdirs();
         config.initConfig(new File(configDir.getPath(), reference.modid + ".cfg"));
-        blockreg.cbreg();
+
         ItemRegistry.registerBottles();
         oredictionaryEntries.addEntries();
 
@@ -54,6 +53,8 @@ public class miscblocksitemsandmore
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+
+
         proxy.preInit();
         MinecraftForge.EVENT_BUS.register(this);
 

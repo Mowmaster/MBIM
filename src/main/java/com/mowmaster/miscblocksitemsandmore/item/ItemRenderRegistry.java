@@ -21,6 +21,8 @@ public class ItemRenderRegistry
             register(ItemRegistry.enderium_blend_dust);
             register(ItemRegistry.fake_pyrothium);
         }
+
+            register(ItemRegistry.tool_crusher);
     }
     public static void register(Item item)
     {

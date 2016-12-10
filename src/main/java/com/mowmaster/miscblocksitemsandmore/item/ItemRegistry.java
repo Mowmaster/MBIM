@@ -15,6 +15,8 @@ public class ItemRegistry
     public static Item enderium_blend_dust;
     public static Item fake_pyrothium;
 
+    public static Item tool_crusher;
+
     public static void registerBottles()
     {
         if (config.RecyclableGlass) {
@@ -27,5 +29,7 @@ public class ItemRegistry
             GameRegistry.register(enderium_blend_dust = new basicItem("enderium_blend_dust").setRegistryName("enderium_blend_dust"));
             GameRegistry.register(fake_pyrothium = new basicItem("fake_pyrothium").setRegistryName("fake_pyrothium"));
         }
+
+        GameRegistry.register(tool_crusher = new basicItem("tool_crusher").setRegistryName("tool_crusher"));
     }
 }
