@@ -21,7 +21,6 @@ public class config
     public static boolean FlintForDays;
     public static boolean LeatherForDays;
     public static boolean CompactUncrafting;
-    public static boolean HammaTime;
     public static boolean harderRecipes;
 
 
@@ -53,7 +52,6 @@ public class config
 
 
         RecyclableGlass = configFile.getBoolean("Recycleable Glass",category,true,"Do you want to be able to recycle glass?");
-        HammaTime = configFile.getBoolean("Hamma Time!",category,true,"Do you need more Hammers in your life?");
 
 
 

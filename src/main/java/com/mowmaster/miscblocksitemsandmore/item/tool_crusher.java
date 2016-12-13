@@ -14,6 +14,6 @@ public class tool_crusher extends Item {
         this.setUnlocalizedName(unloc);
         this.maxStackSize = 1;
         this.setCreativeTab(tabBottles);
-        this.setMaxDamage(64);
+        this.bFull3D=true;
     }
 }

@@ -24,11 +24,10 @@ public class ItemRegistry
             GameRegistry.register(glass_pile = new basicItem("glass_pile").setRegistryName("glass_pile"));
             GameRegistry.register(glass_largepile = new basicItem("glass_largepile").setRegistryName("glass_largepile"));
         }
-        if (config.HammaTime) {
-            GameRegistry.register(tool_hammer = new tool_hammer("tool_hammer").setRegistryName("tool_hammer"));
+
             GameRegistry.register(enderium_blend_dust = new basicItem("enderium_blend_dust").setRegistryName("enderium_blend_dust"));
             GameRegistry.register(fake_pyrothium = new basicItem("fake_pyrothium").setRegistryName("fake_pyrothium"));
-        }
+
 
         GameRegistry.register(tool_crusher = new basicItem("tool_crusher").setRegistryName("tool_crusher"));
     }

@@ -14,9 +14,7 @@ import net.minecraftforge.oredict.ShapelessOreRecipe;
 import static com.mowmaster.miscblocksitemsandmore.item.ItemRegistry.tool_hammer;
 import static com.mowmaster.miscblocksitemsandmore.recipies.removeRecipies.removeCrafting;
 
-/**
- * Created by KingMowmaster on 7/27/2016.
- */
+
 public class substratum
 {
     public static void checkSub()
@@ -73,10 +71,7 @@ public class substratum
                 removeCrafting(Item.REGISTRY.getObject(new ResourceLocation("substratum:bootsSignalum")));
                 removeCrafting(Item.REGISTRY.getObject(new ResourceLocation("substratum:bootsSilver")));
                 removeCrafting(Item.REGISTRY.getObject(new ResourceLocation("substratum:bootsSteel")));
-                removeCrafting(Item.REGISTRY.getObject(new ResourceLocation("substratum:bootsAluminium")));
-
-
-                if (config.HammaTime) {
+                removeCrafting(Item.REGISTRY.getObject(new ResourceLocation("substratum:bootsAluminium")));{
 
                     removeCrafting(SPlate);
 

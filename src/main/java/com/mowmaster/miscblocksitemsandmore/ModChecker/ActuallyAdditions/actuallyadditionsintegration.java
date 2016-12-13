@@ -26,8 +26,9 @@ public class actuallyadditionsintegration
 
         //Not the best way but it works
         for(ItemStack stack : OreDictionary.getOres("oreLead")) {
-            CRUSHER_RECIPES.add(new CrusherRecipe(stack, new ItemStack(IELeadGrit,1,11), new ItemStack(SubZinc,1,9), 25));
+            //CRUSHER_RECIPES.add(new CrusherRecipe(stack, new ItemStack(IELeadGrit,1,11), new ItemStack(SubZinc,1,9), 25));
             GameRegistry.addShapelessRecipe(new ItemStack(TSONORE, 1), stack);
         }
+        CRUSHER_RECIPES.add(new CrusherRecipe(new ItemStack(TSONORE), new ItemStack(IELeadGrit,1,11), new ItemStack(SubZinc,1,9), 25));
     }
 }

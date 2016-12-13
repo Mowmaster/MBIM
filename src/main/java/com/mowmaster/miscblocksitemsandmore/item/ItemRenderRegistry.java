@@ -16,8 +16,7 @@ public class ItemRenderRegistry
             register(ItemRegistry.glass_pile);
             register(ItemRegistry.glass_largepile);
         }
-        if (config.HammaTime) {
-            register(ItemRegistry.tool_hammer);
+        {
             register(ItemRegistry.enderium_blend_dust);
             register(ItemRegistry.fake_pyrothium);
         }
