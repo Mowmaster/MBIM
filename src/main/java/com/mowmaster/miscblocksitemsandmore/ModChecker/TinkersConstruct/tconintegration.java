@@ -15,9 +15,7 @@ import static com.mowmaster.miscblocksitemsandmore.item.ItemRegistry.glass_large
 import static com.mowmaster.miscblocksitemsandmore.item.ItemRegistry.glass_pile;
 import static com.mowmaster.miscblocksitemsandmore.item.ItemRegistry.glass_tinypile;
 import static slimeknights.tconstruct.shared.TinkerFluids.*;
-import static slimeknights.tconstruct.smeltery.TinkerSmeltery.cast;
-import static slimeknights.tconstruct.smeltery.TinkerSmeltery.castCustom;
-import static slimeknights.tconstruct.smeltery.TinkerSmeltery.clayCast;
+import static slimeknights.tconstruct.smeltery.TinkerSmeltery.*;
 
 public class tconintegration
 {
@@ -68,30 +66,23 @@ public class tconintegration
                     TinkerRegistry.registerMelting("oreChrome", FluidRegistry.getFluid("liquidchrome"), 216);
                     TinkerRegistry.registerMelting("orePlatinum", FluidRegistry.getFluid("liquidplatinum"), 216);
                     TinkerRegistry.registerMelting("oreAlumina", aluminum, 288);
-/*
-                // Foundry to TCon is a 4:3 Ratio (432 is the common factor)or 144mb:108mb
-                //Enderium
-                TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidenderium"), 2), new FluidStack(FluidRegistry.getFluid("liquidplatinum"), 1), new FluidStack(FluidRegistry.getFluid("silver"), 1), new FluidStack(FluidRegistry.getFluid("liquidenderpearl"), 9), new FluidStack(FluidRegistry.getFluid("tin"), 2));
-                TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidenderium"), 2), new FluidStack(FluidRegistry.getFluid("liquidplatinum"), 1), new FluidStack(FluidRegistry.getFluid("liquidsilver"), 1), new FluidStack(FluidRegistry.getFluid("liquidenderpearl"), 9), new FluidStack(FluidRegistry.getFluid("liquidtin"), 2));
-                //Invar
-                TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidinvar"), 9), new FluidStack(FluidRegistry.getFluid("iron"), 6), new FluidStack(FluidRegistry.getFluid("nickel"), 3));
-                TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidinvar"), 12), new FluidStack(FluidRegistry.getFluid("liquidiron"), 8), new FluidStack(FluidRegistry.getFluid("liquidnickel"), 4));
-                //Signalum
-                TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidsignalum"), 12), new FluidStack(FluidRegistry.getFluid("copper"), 6), new FluidStack(FluidRegistry.getFluid("silver"), 3), new FluidStack(FluidRegistry.getFluid("liquidredstone"), 10));
-                TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidsignalum"), 16), new FluidStack(FluidRegistry.getFluid("liquidcopper"), 8), new FluidStack(FluidRegistry.getFluid("liquidsilver"), 4), new FluidStack(FluidRegistry.getFluid("liquidredstone"), 10));
-                //Lumium
-                TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidlumium"), 12), new FluidStack(FluidRegistry.getFluid("tin"), 9), new FluidStack(FluidRegistry.getFluid("silver"), 3), new FluidStack(FluidRegistry.getFluid("liquidglowstone"), 10));
-                TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidlumium"), 16), new FluidStack(FluidRegistry.getFluid("liquidtin"), 12), new FluidStack(FluidRegistry.getFluid("liquidsilver"), 4), new FluidStack(FluidRegistry.getFluid("liquidglowstone"), 10));
-                //Cupronickel
-                TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidcupronickel"), 6), new FluidStack(FluidRegistry.getFluid("copper"), 3), new FluidStack(FluidRegistry.getFluid("nickel"), 3));
-                TinkerRegistry.registerAlloy(new FluidStack(FluidRegistry.getFluid("liquidcupronickel"), 8), new FluidStack(FluidRegistry.getFluid("liquidcopper"), 4), new FluidStack(FluidRegistry.getFluid("liquidnickel"), 4));
-*/
+
                 }
 
+                Item SlimeBall = Item.REGISTRY.getObject(new ResourceLocation("tconstruct:edible"));
+                Item ConSlime = Item.REGISTRY.getObject(new ResourceLocation("tconstruct:slime_congealed"));
+
+                TinkerRegistry.registerMelting(new ItemStack(SlimeBall,1,1),blueslime,250);
+                TinkerRegistry.registerMelting(new ItemStack(ConSlime,1,1),blueslime,1000);
+                TinkerRegistry.registerTableCasting(new ItemStack(SlimeBall,1,2),null,purpleSlime,250);
+                TinkerRegistry.registerTableCasting(new ItemStack(SlimeBall,1,1),null,blueslime,250);
+                TinkerRegistry.registerBasinCasting(new ItemStack(ConSlime,1,2),null,purpleSlime,1000);
+                TinkerRegistry.registerBasinCasting(new ItemStack(ConSlime,1,1),null,blueslime,1000);
 
             }
-        }
 
 
     }
+}
+
 }

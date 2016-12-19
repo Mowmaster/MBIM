@@ -21,7 +21,9 @@ public class forestryintegration
         if (config.NewEraTweaks) {
             if (Loader.isModLoaded("forestry")) {
                 Item FMulch = Item.REGISTRY.getObject(new ResourceLocation("forestry:mulch"));
+                Item FWax = Item.REGISTRY.getObject(new ResourceLocation("forestry:beeswax"));
                 Fluid FSeedOil = FluidRegistry.getFluid("seed.oil");
+                Fluid FHoney = FluidRegistry.getFluid("for.honey");
 
                 if (Loader.isModLoaded("harvestcraft")) {
                     //HarvestCraft seeds, probably an easier way to do this to get them to show in jei...
@@ -109,7 +111,7 @@ public class forestryintegration
                     RecipeManagers.squeezerManager.addRecipe(20, new ItemStack[]{new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("calculator:PrunaeSeeds")))}, new FluidStack(FSeedOil, 10), new ItemStack(FMulch), 2);
                 }
 
-                //removeSmelting(Items.COAL); Will put back in once forestry adds their charcoal recipes to the game
+                RecipeManagers.squeezerManager.addRecipe(20, new ItemStack[]{new ItemStack(Item.REGISTRY.getObject(new ResourceLocation("forestry:beeDroneGE")))},new FluidStack(FHoney, 10), new ItemStack(FWax),2);
             }
         }
     }
