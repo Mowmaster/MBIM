@@ -1,14 +1,14 @@
 [
 {
-  "modid": "miscblocksitemsandmore",
-  "name": "NEoA",
-  "description": "Tweeks for NEoA",
-  "version": "0.2.5",
-  "mcversion": "1.10.2-12.18.3.2185",
+  "modid": "examplemod",
+  "name": "Example Mod",
+  "description": "Example placeholder mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["Mowmaster"],
-  "credits": "Thanks for all your hard work on the NEoA pack Mystic!",
+  "authorList": ["ExampleDude"],
+  "credits": "The Forge and FML guys, for making this example",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
