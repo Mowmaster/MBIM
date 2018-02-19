@@ -2,6 +2,8 @@ package com.mowmaster.mbim;
 
 import com.mowmaster.mbim.items.ItemRegistry;
 import com.mowmaster.mbim.proxies.CommonProxy;
+import com.mowmaster.mbim.recipes.OreDict;
+import com.mowmaster.mbim.recipes.Smelting;
 import com.mowmaster.mbim.reference.references;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -27,6 +29,8 @@ public class mbim
         ItemRegistry.init();
         ItemRegistry.register();
         proxy.preInit();
+        OreDict.addEntries();
+        Smelting.addSmelting();
     }
 
     @Mod.EventHandler

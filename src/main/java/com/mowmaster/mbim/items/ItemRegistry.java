@@ -11,23 +11,30 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 public class ItemRegistry
 {
     public static Item basicItem;
+    public static Item glassDust;
+    public static Item tinyDust;
 
 
     public static void init()
     {
-
         basicItem = new ItemPullBack("bow","bow");
+        glassDust = new ItemBasic("glassdust","glassdust");
+        tinyDust = new ItemBasic("tinydust","tinydust");
     }
 
     public static void register()
     {
         registerItem(basicItem);
+        registerItem(glassDust);
+        registerItem(tinyDust);
 
     }
 
     public static void registerRenders()
     {
         registerRender(basicItem);
+        registerRender(glassDust);
+        registerRender(tinyDust);
     }
 
     public static void registerItem(Item item)
