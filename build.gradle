@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 
 version = "0.000.1"
 group = "com.mowmaster.mbim" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "modid"
+archivesBaseName = "mbim"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
