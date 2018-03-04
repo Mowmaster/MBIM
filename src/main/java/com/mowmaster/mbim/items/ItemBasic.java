@@ -1,5 +1,6 @@
 package com.mowmaster.mbim.items;
 
+import com.mowmaster.mbim.reference.ModTab;
 import com.mowmaster.mbim.reference.references;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
@@ -17,6 +18,7 @@ public class ItemBasic extends Item
         this.setUnlocalizedName(unlocalName);
         this.setRegistryName(new ResourceLocation(references.MODID, regName));
         this.maxStackSize = 64;
+        this.setCreativeTab(ModTab.MODTAB);
     }
 
 }

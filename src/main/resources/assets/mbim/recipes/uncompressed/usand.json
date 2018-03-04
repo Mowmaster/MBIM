@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "mbim:csand"}
+  ],
+  "result": {
+    "item": "minecraft:sand",
+    "data":0,
+    "count":9
+  }
+}

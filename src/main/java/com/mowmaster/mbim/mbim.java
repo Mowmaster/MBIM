@@ -1,5 +1,6 @@
 package com.mowmaster.mbim;
 
+import com.mowmaster.mbim.blocks.BlockRegistry;
 import com.mowmaster.mbim.items.ItemRegistry;
 import com.mowmaster.mbim.proxies.CommonProxy;
 import com.mowmaster.mbim.recipes.OreDict;
@@ -28,6 +29,8 @@ public class mbim
     {
         ItemRegistry.init();
         ItemRegistry.register();
+        BlockRegistry.init();
+        BlockRegistry.register();
         proxy.preInit();
         OreDict.addEntries();
         Smelting.addSmelting();

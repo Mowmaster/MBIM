@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "mbim:cdiorite"}
+  ],
+  "result": {
+    "item": "minecraft:stone",
+    "data": 3,
+    "count":9
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "mbim:cdirt"}
+  ],
+  "result": {
+    "item": "minecraft:dirt",
+    "data":0,
+    "count":9
+  }
+}
