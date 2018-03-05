@@ -1,0 +1,21 @@
+{
+  "parent": "mbim:recipes/root",
+  "rewards": {
+    "recipes": [
+      "mbim:ccobble"
+    ]
+  },
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:stone",
+            "data": 1
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "parent": "mbim:recipes/root",
+  "rewards": {
+    "recipes": [
+      "mbim:cdirt"
+    ]
+  },
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dirt",
+            "data":0
+          }
+        ]
+      }
+    }
+  }
+}

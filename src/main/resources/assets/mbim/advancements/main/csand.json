@@ -1,0 +1,21 @@
+{
+  "parent": "mbim:recipes/root",
+  "rewards": {
+    "recipes": [
+      "mbim:csand"
+    ]
+  },
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:sand",
+            "data":0
+          }
+        ]
+      }
+    }
+  }
+}
