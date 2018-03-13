@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "minecraft:chest",
+    "count":4
+  },
+  "pattern": [
+    "xxx",
+    "x x",
+    "xxx"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "x": {
+      "type": "forge:ore_dict", "ore": "logWood"
+    }
+  }
+}

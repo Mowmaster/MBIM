@@ -1,0 +1,20 @@
+{
+  "result": {
+    "item": "minecraft:trapped_chest",
+    "count":1
+  },
+  "pattern": [
+    "xxx",
+    "xyx",
+    "xxx"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "x": {
+      "type": "forge:ore_dict", "ore": "plankWood"
+    },
+    "y": {
+      "item": "minecraft:tripwire_hook"
+    }
+  }
+}
