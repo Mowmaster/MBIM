@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "mbim:block_iron_cluster",
+    "mbim:block_iron_node"
+  ]
+}

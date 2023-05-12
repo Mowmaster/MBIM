@@ -1,0 +1,6 @@
+{
+  "variants":
+  {
+    "": { "model": "mbim:block/block_inertnode" }
+  }
+}

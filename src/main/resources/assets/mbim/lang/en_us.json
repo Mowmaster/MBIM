@@ -1,0 +1,11 @@
+{
+  "itemGroup.tab_mbim": "Mow's Blocks, Items, and More",
+
+  "item.mbim.item_iron_crystal": "Iron Crystal",
+  "item.mbim.item_iron_crystal.description": "§5 Obtained from Breaking Clusters of Iron Crystals",
+
+  "block.mbim.block_iron_node": "Crystal Node",
+  "block.mbim.block_iron_node.description": "§5 Over time: Generates Clusters Of Crystals, or Converts Stone into Colored Crystal Stone",
+  "block.mbim.block_iron_cluster": "Cluster of Crystals",
+  "block.mbim.block_iron_cluster.description": "§5 A Cluster of Crystals"
+}
