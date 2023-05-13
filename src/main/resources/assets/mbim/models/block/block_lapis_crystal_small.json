@@ -1,0 +1,7 @@
+{
+  "parent": "mbim:block/parents/block_inertcluster_small",
+  "textures": {
+    "texture": "mbim:blocks/block_lapis_crystal",
+    "particle": "mbim:blocks/block_lapis_crystal"
+  }
+}

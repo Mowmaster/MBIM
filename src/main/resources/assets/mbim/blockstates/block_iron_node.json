@@ -1,6 +1,6 @@
 {
   "variants":
   {
-    "": { "model": "mbim:block/block_inertnode" }
+    "": { "model": "mbim:block/block_iron_node" }
   }
 }

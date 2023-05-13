@@ -1,0 +1,7 @@
+{
+  "parent": "mbim:block/parents/block_inertcluster_large",
+  "textures": {
+    "texture": "mbim:blocks/block_copper_crystal",
+    "particle": "mbim:blocks/block_copper_crystal"
+  }
+}

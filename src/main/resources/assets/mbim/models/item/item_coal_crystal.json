@@ -1,6 +1,6 @@
 {
   "parent": "mbim:item/parents/base_item_crystal",
   "textures": {
-    "texture": "mbim:items/iron_crystal"
+    "texture": "mbim:items/coal_crystal"
   }
 }

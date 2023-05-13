@@ -1,0 +1,7 @@
+{
+  "parent": "mbim:block/parents/block_inertnode",
+  "textures": {
+    "texture": "mbim:blocks/block_copper_node",
+    "particle": "mbim:blocks/block_copper_node"
+  }
+}

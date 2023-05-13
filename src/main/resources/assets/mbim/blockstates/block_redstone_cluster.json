@@ -1,0 +1,32 @@
+{
+  "variants":
+  {
+    "age=0,facing=down": { "model": "mbim:block/block_redstone_crystal_small","x": 180 },
+    "age=0,facing=east": { "model": "mbim:block/block_redstone_crystal_small","x": 90, "y": 90 },
+    "age=0,facing=north": { "model": "mbim:block/block_redstone_crystal_small","x": 90 },
+    "age=0,facing=south": { "model": "mbim:block/block_redstone_crystal_small","x": 90, "y": 180 },
+    "age=0,facing=up": { "model": "mbim:block/block_redstone_crystal_small","x": 0 },
+    "age=0,facing=west": { "model": "mbim:block/block_redstone_crystal_small","x": 90, "y": 270 },
+
+    "age=1,facing=down": { "model": "mbim:block/block_redstone_crystal_medium","x": 180 },
+    "age=1,facing=east": { "model": "mbim:block/block_redstone_crystal_medium","x": 90, "y": 90 },
+    "age=1,facing=north": { "model": "mbim:block/block_redstone_crystal_medium","x": 90 },
+    "age=1,facing=south": { "model": "mbim:block/block_redstone_crystal_medium","x": 90, "y": 180 },
+    "age=1,facing=up": { "model": "mbim:block/block_redstone_crystal_medium","x": 0 },
+    "age=1,facing=west": { "model": "mbim:block/block_redstone_crystal_medium","x": 90, "y": 270 },
+
+    "age=2,facing=down": { "model": "mbim:block/block_redstone_crystal_large","x": 180 },
+    "age=2,facing=east": { "model": "mbim:block/block_redstone_crystal_large","x": 90, "y": 90 },
+    "age=2,facing=north": { "model": "mbim:block/block_redstone_crystal_large","x": 90 },
+    "age=2,facing=south": { "model": "mbim:block/block_redstone_crystal_large","x": 90, "y": 180 },
+    "age=2,facing=up": { "model": "mbim:block/block_redstone_crystal_large","x": 0 },
+    "age=2,facing=west": { "model": "mbim:block/block_redstone_crystal_large","x": 90, "y": 270 },
+
+    "age=3,facing=down": { "model": "mbim:block/block_redstone_crystal_full","x": 180 },
+    "age=3,facing=east": { "model": "mbim:block/block_redstone_crystal_full","x": 90, "y": 90 },
+    "age=3,facing=north": { "model": "mbim:block/block_redstone_crystal_full","x": 90 },
+    "age=3,facing=south": { "model": "mbim:block/block_redstone_crystal_full","x": 90, "y": 180 },
+    "age=3,facing=up": { "model": "mbim:block/block_redstone_crystal_full","x": 0 },
+    "age=3,facing=west": { "model": "mbim:block/block_redstone_crystal_full","x": 90, "y": 270 }
+  }
+}

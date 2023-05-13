@@ -1,0 +1,7 @@
+{
+  "parent": "mbim:block/parents/block_inertcluster_medium",
+  "textures": {
+    "texture": "mbim:blocks/block_iron_crystal",
+    "particle": "mbim:blocks/block_iron_crystal"
+  }
+}

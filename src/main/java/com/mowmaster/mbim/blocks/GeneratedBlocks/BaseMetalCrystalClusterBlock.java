@@ -93,7 +93,7 @@ public class BaseMetalCrystalClusterBlock extends BaseMetalCrystalBlock implemen
     }
 
     public int getMaxAge() {
-        return 7;
+        return 3;
     }
 
     protected int getAge(BlockState p_52306_) {
@@ -152,6 +152,7 @@ public class BaseMetalCrystalClusterBlock extends BaseMetalCrystalBlock implemen
 
     //Should Fix Building Gadgets dropps issues
     //https://github.com/Direwolf20-MC/MiningGadgets/blob/1.19/src/main/java/com/direwolf20/mininggadgets/common/tiles/RenderBlockTileEntity.java#L444
+    /*
     @Override
     public List<ItemStack> getDrops(BlockState p_60537_, LootContext.Builder p_60538_) {
         Random rand = new Random();
@@ -169,6 +170,7 @@ public class BaseMetalCrystalClusterBlock extends BaseMetalCrystalBlock implemen
         }
         return super.getDrops(p_60537_, p_60538_);
     }
+     */
 
     @Override
     public boolean canDropFromExplosion(BlockState state, BlockGetter level, BlockPos pos, Explosion explosion) {

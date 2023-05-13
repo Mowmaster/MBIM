@@ -13,10 +13,13 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.material.PushReaction;
 
+import static com.mowmaster.mbim.blocks.GeneratedBlocks.BaseMetalCrystalClusterBlock.FACING;
+import static com.mowmaster.mbim.blocks.GeneratedBlocks.BaseMetalCrystalClusterBlock.WATERLOGGED;
+
 public class BaseMetalCrystalNodeBlock extends BaseMetalCrystalBlock
 {
     private static final Direction[] DIRECTIONS = Direction.values();
-    private static Block getBlockToGrow;
+    private Block getBlockToGrow;
 
     public BaseMetalCrystalNodeBlock(Properties p_152726_,Block blockToGrowOnCrystal) {
         super(p_152726_);
@@ -41,13 +44,13 @@ public class BaseMetalCrystalNodeBlock extends BaseMetalCrystalBlock
             Block block = null;
 
             if (canClusterGrowAtState(blockstate)) {
-                p_222955_.setBlock(blockpos, this.getBlockToGrow.defaultBlockState(),2);
+                p_222955_.setBlock(blockpos, this.getBlockToGrow.defaultBlockState().setValue(FACING,direction).setValue(WATERLOGGED,(blockstate.is(Blocks.WATER))?(Boolean.valueOf(true)):(Boolean.valueOf(false))),2);
             } else{
                 if(blockstate.getBlock() instanceof BaseMetalCrystalClusterBlock cluster)
                 {
                     int i = cluster.getAge(blockstate);
                     if (i < cluster.getMaxAge()) {
-                        p_222955_.setBlock(blockpos, cluster.getStateForAge(i + 1), 2);
+                        p_222955_.setBlock(blockpos, cluster.getStateForAge(i + 1).setValue(FACING,blockstate.getValue(FACING)).setValue(WATERLOGGED,blockstate.getValue(WATERLOGGED)), 2);
                     }
                 }
             }
